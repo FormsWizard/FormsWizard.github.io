@@ -1,0 +1,31 @@
+---
+// library imports
+import { Icon } from "astro-icon";
+
+//component imports
+import Link from "./Link.astro"
+
+//data imports
+import navData from "../data/navData";
+---
+
+<nav aria-label="Primary">
+    <div class="navbar">
+
+        <a href={"../pages/about.astro"} aria-label="About" >
+        </a>
+        <a href={"../pages/documentation.astro"} />
+        <a href={"../pages/index.astro"} />
+        <ul>
+            {
+                navData.map((item) =>
+                    <Link
+                        text={item.name}
+                        href={item.path}
+                        style="primary"
+                        isFilled={false}
+                    />
+                )}
+        </ul>
+    </div>
+</nav>

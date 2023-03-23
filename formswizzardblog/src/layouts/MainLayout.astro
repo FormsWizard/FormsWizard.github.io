@@ -1,0 +1,33 @@
+---
+// component import
+import Footer from "../components/Footer";
+import "../styles/global.css";
+import MainHead from "./MainHead.astro";
+import NavBar from "../components/NavBar.astro";
+
+
+// style import
+import Styles from "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Forms_Wizard Project Page", 
+  description = "Welcome to the Forms_Wizard Project Page!" 
+} = Astro.props as Props;
+
+//const { navItem = "Default NavItem" } = Astro.props as Props;
+---
+
+<html lang="en">
+  <MainHead title={title} description={description}></MainHead>
+  <body>
+    <NavBar></NavBar>
+    <slot>This Space is empty yet</slot>
+    <p class="h-screen"></p>
+    <Footer/>
+  </body>
+</html>

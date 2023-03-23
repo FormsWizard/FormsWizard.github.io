@@ -1,0 +1,27 @@
+---
+import Button from "../components/Button";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const btnName = "Follow our dev path!";
+---
+
+<MainLayout title="Home">
+  <div class="pagestructure">
+    <h1 class="pagetitle">Welcome to the Forms_Wizard Project Page!</h1>
+    <div>
+      <div>
+        <p>
+          A project to support civic engagement with the right Data Handling.
+          While proceeding the Forms_Wizard project our focus lays on
+          independency in development [we love opensource!], adjustability [we
+          see a wide variety in civic engagement and their need of data
+          management] and reflection of security aspects.
+        </p>
+      </div>
+      <div>
+        <Button />
+        <Button>{btnName}</Button>
+      </div>
+    </div>
+  </div>
+</MainLayout>
