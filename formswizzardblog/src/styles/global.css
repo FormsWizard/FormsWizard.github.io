@@ -333,13 +333,13 @@ nav :where(ol, ul) {
     user-select: none;
   }
   
-  .link (svg) {
+  /*.link (svg) {
     height: max(1.13rem, min(calc(1.04rem + 0.43vw), 1.38rem));
     height: var(--fs-md);
     width: max(1.13rem, min(calc(1.04rem + 0.43vw), 1.38rem));
     width: var(--fs-md);
   }
-
+*/
   
   .link.primary {
     --type: hsl(var(--txt));

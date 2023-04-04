@@ -1,6 +1,9 @@
 ---
 // component import
 import Footer from "../components/Footer";
+import StickyFooter from "../components/Footer/StickyFooter";
+import GuestFooter from "../components/Footer/GuestFooter";
+
 import "../styles/global.css";
 import MainHead from "./MainHead.astro";
 import NavBar from "../components/NavBar.astro";
@@ -28,6 +31,6 @@ const {
     <NavBar></NavBar>
     <slot>This Space is empty yet</slot>
     <p class="h-screen"></p>
-    <Footer/>
+    <StickyFooter/>
   </body>
 </html>

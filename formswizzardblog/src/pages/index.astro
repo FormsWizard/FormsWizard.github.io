@@ -1,6 +1,6 @@
 ---
-import Button from "../components/Button";
 import MainLayout from "../layouts/MainLayout.astro";
+import Button from '@mui/material/Button';
 
 const btnName = "Follow our dev path!";
 ---
@@ -19,8 +19,7 @@ const btnName = "Follow our dev path!";
         </p>
       </div>
       <div>
-        <Button />
-        <Button>{btnName}</Button>
+          <Button variant="outlined">Dive in</Button>
       </div>
     </div>
   </div>
