@@ -1,3 +1,4 @@
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
@@ -10,13 +11,14 @@
 nav :where(ol, ul) {
     list-style: none;
   }
-  
+ /* 
   img,
   picture {
     width: 100%;
     max-width: 100%;
     display: block;
   }
+  */
   
   p,
   h1,
@@ -54,7 +56,7 @@ nav :where(ol, ul) {
     --content-xs: 20ch;
     --content-sm: 30ch;
     --content-md: 45ch;
-    --content-lg: 65ch;
+    --content-lg: 95ch;
     --fs-sm: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
     --fs-md: max(1.13rem, min(calc(1.04rem + 0.43vw), 1.38rem));
     --fs-lg: max(1.35rem, min(calc(1.22rem + 0.64vw), 1.72rem));
@@ -150,26 +152,25 @@ nav :where(ol, ul) {
     }
   }
   
+  
   button {
     cursor: pointer;
     font-size: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
     font-size: var(--fs-sm);
-    width: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-    width: var(--space-md);
-    height: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-    height: var(--space-md);
+    padding: 0.5rem 1.5rem;
     display: grid;
     align-items: center;
     justify-items: center;
     place-items: center;
     border: none;
-    background-color: #f5f6f9;
+    background-color: #6b96f3;
     background-color: hsl(var(--bkg));
     box-shadow: 0.2px 0.5px 0.6px #8186bb4a, 0.6px 1.5px 1.8px -0.8px #8186bb4a,
       1.6px 3.8px 4.6px -1.7px #8186bb4a, 3.9px 9.3px 11.3px -2.5px #8186bb4a;
     box-shadow: var(--shadow-md);
   }
   
+
   body {
     min-height: 100vh;
     display: grid;
@@ -237,7 +238,7 @@ nav :where(ol, ul) {
   }
   
   p {
-    max-width: 65ch;
+    max-width: 95ch;
     max-width: var(--content-lg);
     padding: 18px;
   }
@@ -383,6 +384,7 @@ nav :where(ol, ul) {
     color: hsl(var(--bkg));
   }
   
+  /*
   .container {
     width: 100%;
     max-width: 1500px;
@@ -391,6 +393,7 @@ nav :where(ol, ul) {
     padding: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
     padding: var(--space-md);
   }
+  */
   
   [aria-label="Primary"] {
     width: 100%;
@@ -440,7 +443,8 @@ nav :where(ol, ul) {
     gap: var(--space-sm);
     justify-content: center;
   }
-  
+
+  /*
   :where(footer) {
     width: 100%;
     text-align: center;
@@ -468,6 +472,7 @@ nav :where(ol, ul) {
     grid-gap: var(--space-sm);
     gap: var(--space-sm);
   }
+  */
   
   @media (min-width: 480px) {
     :where(footer) div {
@@ -475,13 +480,16 @@ nav :where(ol, ul) {
       justify-content: space-between;
     }
   }
-  
+
+
+  /*
   :where(footer) div a {
     display: flex;
     align-items: center;
     gap: 5px;
     text-decoration: none;
   }
+  */
   
   .about {
     display: grid;
@@ -844,3 +852,4 @@ nav :where(ol, ul) {
 .pagetitle{
   font-size: 22px
 }
+

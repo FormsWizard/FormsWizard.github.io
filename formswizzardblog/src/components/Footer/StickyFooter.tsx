@@ -9,16 +9,18 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      { 'FormsWizard'}
-      {' '} 
+      {'FormsWizard'}
+      {' '}
       {new Date().getFullYear()}
       {'.'}
       <br></br>
-      { 'Funded through '}
-      <Link color="inherit" href="https://prototypefund.de/">
-      <img src="/formswizzardblog/src/images/PrototypeLogo/PrototypeFundLogo.png" width="1rem" height="1rem" alt="Logo" ></img>
-        PrototypeFund
-      </Link>{' '}
+
+
+      {'Funded through '}
+          <Link color="inherit" href="https://prototypefund.de/">
+          <img src="https://i.postimg.cc/zGJGSPZr/Screenshot-2023-04-04-at-13-50-44.png" width="24rem" height="24rem" alt="Logo" ></img>
+            PrototypeFund
+          </Link>{' '}
     </Typography>
   );
 }
@@ -33,13 +35,11 @@ export default function StickyFooter() {
         width: '100%',
         bottom: 0,
         position: 'fixed',
+        alignItems: 'center',
       }}
     >
       <CssBaseline />
       <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-        <Typography variant="h2" component="h1" gutterBottom>
-        {'empty'} 
-        </Typography>
         <Typography variant="h5" component="h2" gutterBottom>
           {'Add: Anything repeated.'}
         </Typography>

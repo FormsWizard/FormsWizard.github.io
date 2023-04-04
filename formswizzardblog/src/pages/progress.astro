@@ -1,10 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import CircularProgress from "@mui/material/CircularProgress";
+import LinearProgress from "@mui/material/LinearProgress";
 ---
 
 <MainLayout>
   <div class="pagestructure">
+  
     <h1 class="pagetitle">Here you will see our progress.</h1>
+    <div>
+      <LinearProgress color="secondary" />
+      <LinearProgress color="success" />
+      <LinearProgress color="inherit" />
+    </div>
     <div>
       <p>We follow you up soon ... !</p>
       <p>
