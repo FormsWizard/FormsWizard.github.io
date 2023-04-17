@@ -36,12 +36,13 @@ export default function StickyFooter() {
         bottom: 0,
         position: 'fixed',
         alignItems: 'center',
+        
       }}
     >
       <CssBaseline />
       <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
         <Typography variant="h5" component="h2" gutterBottom>
-          {'Add: Anything repeated.'}
+          {''}
         </Typography>
       </Container>
       <Box
