@@ -3,11 +3,11 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 
-import { Image, Picture } from '@astrojs/image/components';
+//import { Image, Picture } from '@astrojs/image/components';
 // import ReactRoundedImage from "react-rounded-image";
 
 
-import Avatar4 from "https://i.postimg.cc/x8bxFS7F/Avatar4.png";
+//import Avatar4 from "https://i.postimg.cc/x8bxFS7F/Avatar4.png";
 
 
 
@@ -44,7 +44,7 @@ export default function FullWidthGrid() {
                         <h3 class="font-semibold">ja_ob</h3>
                     </ItemLeftAlign>
                     <ItemLeftAlign>
-                        ... introduction following ...
+                        <p>... will say 'hi' in a bit ...</p>
                     </ItemLeftAlign>
                 </Grid>
                 <Grid xs={6} md={4} display="flex" justifyContent="end" alignItems="end">
@@ -65,18 +65,17 @@ export default function FullWidthGrid() {
                         <h3 class="font-semibold">jo3</h3>
                     </ItemRightAlign>
                     <ItemRightAlign>
-                        <p>Project brain for backend and especially security related issues. From architecture, implementation, project management and communication with first users - without j03 the wizard wouldnt be the wizard!</p>
+                        <p>Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
                     </ItemRightAlign>
                 </Grid>
                 <Grid xs={6} md={4} display="flex" justifyContent="start" alignItems="start">
                     <ItemLeftAlign>
-                        <Image src="https://i.postimg.cc/qBjvkHNC/Avatar3.png" alt="Avatar3" />
                     </ItemLeftAlign>
                 </Grid>
                 <Grid xs={6} md={8} mdOffset="auto">
                     <ItemLeftAlign>
                         <h3 class="font-semibold">sam</h3>
-                        <p>Enthusiast for technology and society - former art and politics student - came to programming through a curiosity that could hardly be stopped</p>
+                        <p class="leading-relaxed">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming through an unstoppable curiosity.</p>
                     </ItemLeftAlign>
                 </Grid>
 
@@ -91,7 +90,7 @@ export default function FullWidthGrid() {
                         <h3 class="font-semibold">sebastian</h3>
                     </ItemRightAlign>
                     <ItemRightAlign>
-                        ... introduction following ...
+                        <p>... will say 'hi' in a bit ...</p>
                     </ItemRightAlign>
                 </Grid>
             </Grid>
