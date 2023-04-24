@@ -8,7 +8,6 @@ import Link from '@mui/material/Link';
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
-      {'Copyright © '}
       { 'FormsWizard'}
       {new Date().getFullYear()}
       {'.'}
