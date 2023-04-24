@@ -12,6 +12,10 @@ const navData = [
         name: "Blog",
         path: "/blog",
     },
+    {
+        name: "Documentation",
+        path: "https://github.com/FormsWizard",
+    },
 ]
 
 export default navData;
