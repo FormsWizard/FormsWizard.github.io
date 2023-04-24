@@ -14,16 +14,24 @@ function FooterContent() {
             {'FormsWizard'}
             {' '}
             {new Date().getFullYear()}
-            {''}
+            {''} <br></br><br></br>
+            {'Funded through:'}
             </p>
           </div>
-  
+
+          <div color="text.secondary" justifyContent="center" alignItems="center" >
+            <p>
+            <Link color="inherit" href="https://prototypefund.de/">
+            <img src="/src/images/PrototypeLogo/PrototypeFundLogo.png" width="54rem" height="54rem" alt="Logo" ></img>
+              Prototype Fund
+            </Link>{' '}
+            </p>
+          </div>
+
           <div color="text.secondary" justifyContent="center" alignItems="center">
             <p>
-            {'Funded through '}
-            <Link color="inherit" href="https://prototypefund.de/">
-              <img src="https://i.postimg.cc/zGJGSPZr/Screenshot-2023-04-04-at-13-50-44.png" width="24rem" height="24rem" alt="Logo" ></img>
-              PrototypeFund
+            <Link color="inherit" href="https://www.bmbf.de/bmbf/de/home/home_node.html">
+              <img src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png" width="150rem" height="150rem" alt="Logo_Bundesministerium" ></img>
             </Link>{' '}
             </p>
           </div>
@@ -46,7 +54,7 @@ export default function StickyFooter() {
       }}
     >
       <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="lg">
+      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="lg" font-family="surt-regular">
         <Typography variant="h5" component="h2" gutterBottom>
           {''}
         </Typography>
@@ -57,10 +65,6 @@ export default function StickyFooter() {
           py: 4,
           px: 30,
           mt: 'auto',
-          backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
         }}
       >
         <Container >
