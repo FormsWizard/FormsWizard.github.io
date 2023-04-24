@@ -9,8 +9,8 @@ const navData = [
         path: "/about/",
     },
     {
-        name: "Progress",
-        path: "/progress",
+        name: "Blog",
+        path: "/blog",
     },
 ]
 

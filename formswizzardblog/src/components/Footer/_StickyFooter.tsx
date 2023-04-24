@@ -6,31 +6,32 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
 function FooterContent() {
-  return (
-    <Typography>
-      <div variant="body2" color="text.secondary" justifyContent="center" alignItems="center">
-        <div >
-          <p>
-          {'FormsWizard'}
-          {' '}
-          {new Date().getFullYear()}
-          {''}
-          </p>
+    return (
+      <Typography>
+        <div variant="body2" color="text.secondary" justifyContent="center" alignItems="center">
+          <div >
+            <p>
+            {'FormsWizard'}
+            {' '}
+            {new Date().getFullYear()}
+            {''}
+            </p>
+          </div>
+  
+          <div color="text.secondary" justifyContent="center" alignItems="center">
+            <p>
+            {'Funded through '}
+            <Link color="inherit" href="https://prototypefund.de/">
+              <img src="https://i.postimg.cc/zGJGSPZr/Screenshot-2023-04-04-at-13-50-44.png" width="24rem" height="24rem" alt="Logo" ></img>
+              PrototypeFund
+            </Link>{' '}
+            </p>
+          </div>
         </div>
+      </Typography>
+    );
+  }
 
-        <div color="text.secondary" justifyContent="center" alignItems="center">
-          <p>
-          {'Funded through '}
-          <Link color="inherit" href="https://prototypefund.de/">
-            <img src="https://i.postimg.cc/zGJGSPZr/Screenshot-2023-04-04-at-13-50-44.png" width="24rem" height="24rem" alt="Logo" ></img>
-            PrototypeFund
-          </Link>{' '}
-          </p>
-        </div>
-      </div>
-    </Typography>
-  );
-}
 
 export default function StickyFooter() {
   return (
@@ -38,12 +39,10 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
         width: '100%',
         bottom: 0,
         position: 'fixed',
         alignItems: 'center',
-
       }}
     >
       <CssBaseline />
