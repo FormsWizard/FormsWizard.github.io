@@ -2,6 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import CircularProgress from "@mui/material/CircularProgress";
 import LinearProgress from "@mui/material/LinearProgress";
+
+// Import multiple files with Astro.glob
+//const posts = await Astro.glob('../content/*.md');
+// Import a single file
+import * as myPost from '../content/general.md';
 ---
 
 <MainLayout>
@@ -22,6 +27,9 @@ import LinearProgress from "@mui/material/LinearProgress";
           href="https://github.com/FormsWizard">github project page</a
         > !
       </p>
+    </div>
+    <div>
+      <p>{myPost}</p>
     </div>
   </div>
 </MainLayout>
