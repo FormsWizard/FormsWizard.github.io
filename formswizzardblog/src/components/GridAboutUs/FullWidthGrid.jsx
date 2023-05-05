@@ -36,12 +36,14 @@ export default function FullWidthGrid() {
     return (
 
         <Grid container spacing={2}>
-            <Grid xs={6} md={4}>
+
+            <Grid xs={4} md={3}>
                 <Container>
                     <img src=" /src/images/Avatare/ja_ob.png" width="350rem" alt="Avatar1" />
                 </Container>
             </Grid>
-            <Grid xs={4} md={3}>
+
+            <Grid xs={6} md={4}>
                 <Container>
                     <h3 class="font-semibold">ja_ob</h3>
                 </Container>
@@ -50,45 +52,44 @@ export default function FullWidthGrid() {
                 </Container>
             </Grid>
 
-            <Grid xs={6} md={8} mdOffset="auto" >
+
+
+            <Grid xs={4} md={3}>
+                <Container>
+                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
+                </Container>
+            </Grid>
+            <Grid xs={6} md={4}>
+                <Container>
+                    <h3 class="font-semibold">jO3</h3>
+                </Container>
+                <Container>
+                    <p class="leading-relaxed">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
+                </Container>
             </Grid>
 
 
+            <Grid xs={4} md={3} >
+                <ItemRightAlign>
+                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
+                </ItemRightAlign>
+            </Grid>
             <Grid xs={6} md={4}>
                 <ItemRightAlign>
-                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
-                </ItemRightAlign>
-            </Grid>
-            <Grid xs={6} md={8}>
-                <ItemRightAlign>
-                    <h3 class="font-semibold">jO3</h3>
-                </ItemRightAlign>
-                <ItemRightAlign>
-                    <p class="leading-relaxed">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
-                </ItemRightAlign>
-            </Grid>
-
-
-            <Grid xs={6} md={4} >
-                <ItemLeftAlign>
-                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
-                </ItemLeftAlign>
-                <ItemLeftAlign>
                     <h3 class="font-semibold">sam_</h3>
                     <p class="leading-relaxed">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
-                </ItemLeftAlign>
+                </ItemRightAlign>
             </Grid>
 
-            <Grid xs={6} md={8} mdOffset="auto">
-            </Grid>
+         
 
-            <Grid xs={6} md={4} display="flex" justifyContent="end" alignItems="end">
+            <Grid xs={4} md={3} display="flex" justifyContent="end" alignItems="end">
                 <ItemRightAlign>
                     <img src="/src/images/Avatare/seb_pic.png" alt="Avatar4" width="400rem" />
                 </ItemRightAlign>
             </Grid>
 
-            <Grid xs={6} md={8}>
+            <Grid xs={6} md={4}>
                 <ItemRightAlign>
                     <h3 class="font-semibold">winzlieb</h3>
                 </ItemRightAlign>
