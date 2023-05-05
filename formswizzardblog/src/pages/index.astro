@@ -1,8 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "@mui/material/Button";
-
-const btnName = "Follow our dev path!";
+import FastForwardIcon from '@mui/icons-material/FastForward';
+import Icon from '@mui/material/Icon';
 ---
 
 <MainLayout title="Home">
@@ -11,8 +10,8 @@ const btnName = "Follow our dev path!";
       <h1 class="pagetitle text-center ">Welcome to the forms_Wizard Project Page!</h1>
     </div>
     <div>
-      <p class="text-center leading-relaxed">
-        forms_Wizard <br /> is an open source tool under development that supports
+      <p class=" leading-relaxed">
+        forms_Wizard is an open source tool under development that supports
         civic engagement in data management. In civic organizing contexts there
         are usually few resources and a lot of structure is needed to pool the collected
         energy. With forms_Wizard, we aim to support crews in various use cases to
@@ -26,7 +25,8 @@ const btnName = "Follow our dev path!";
       </p>
     </div>
     <div>
-      <a href="/blog"> <Button variant="outlined">Dive in</Button></a>
+      <a href="/blog"> <FastForwardIcon sx={{ fontSize: 50 }} aria-label="learn more"></FastForwardIcon> </a>
+        <Icon></Icon>
     </div>
   </div>
 </MainLayout>

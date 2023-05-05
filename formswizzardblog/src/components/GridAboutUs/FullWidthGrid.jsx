@@ -41,7 +41,7 @@ export default function FullWidthGrid() {
                     <img src=" /src/images/Avatare/ja_ob.png" width="350rem" alt="Avatar1" />
                 </Container>
             </Grid>
-            <Grid xs={4}>
+            <Grid xs={4} md={3}>
                 <Container>
                     <h3 class="font-semibold">ja_ob</h3>
                 </Container>
@@ -58,16 +58,14 @@ export default function FullWidthGrid() {
                 <ItemRightAlign>
                     <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
                 </ItemRightAlign>
+            </Grid>
+            <Grid xs={6} md={8}>
                 <ItemRightAlign>
                     <h3 class="font-semibold">jO3</h3>
                 </ItemRightAlign>
                 <ItemRightAlign>
                     <p class="leading-relaxed">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
                 </ItemRightAlign>
-            </Grid>
-
-
-            <Grid xs={6} md={8}>
             </Grid>
 
 
