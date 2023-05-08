@@ -6,30 +6,31 @@ import LinearProgress from "@mui/material/LinearProgress";
 // Import multiple files with Astro.glob
 //const posts = await Astro.glob('../content/*.md');
 // Import a single file
-import * as myPost from '../content/general.md';
+import { Content as GeneralIntro } from "../content/generalIntro.md";
+import { Content as DesignProcess } from "../content/designprocess/designprocess.md";
 ---
 
 <MainLayout>
-  <div class="pagestructure">
-  <div>
-    <h1 class="pagetitle">Progress following..</h1>
+  <div class="object-position: top;">
+    <img
+      class="object-position: top;"
+      src="/src/images/projectIntro_picEdit3.png"
+      width="100%"
+      alt="projectIntroPic"
+    />
   </div>
+  <div class="pagestructure">
+    <div>
+      <h1 class="pagetitle">Blog</h1>
+    </div>
     <div>
       <LinearProgress color="secondary" />
       <LinearProgress color="success" />
       <LinearProgress color="inherit" />
     </div>
     <div>
-      <p>We follow you up soon!</p>
-      <p>
-        In the meantime check out our <a
-          style="color: green"
-          href="https://github.com/FormsWizard">github project page</a
-        > !
-      </p>
-    </div>
-    <div>
-      <p>{myPost}</p>
+      <GeneralIntro/>
+      <DesignProcess/>
     </div>
   </div>
 </MainLayout>
