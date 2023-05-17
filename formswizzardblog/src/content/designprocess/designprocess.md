@@ -16,5 +16,5 @@ When designing an interface for human disaster management, use colors with eleme
          - Ultimately, the color scheme you choose should be easily readable and visibly distinguishable to quickly communicate important information during a disaster.
 
 ________________
-Insert: Moodboard.
+TODO: Insert: Moodboard.
 ________________
