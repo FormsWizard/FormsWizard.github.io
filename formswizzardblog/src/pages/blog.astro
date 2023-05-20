@@ -1,7 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import CircularProgress from "@mui/material/CircularProgress";
-import LinearProgress from "@mui/material/LinearProgress";
 
 // Import multiple files with Astro.glob
 //const posts = await Astro.glob('../content/*.md');
@@ -18,19 +16,22 @@ import { Content as DesignProcess } from "../content/designprocess/designprocess
       width="100%"
       alt="projectIntroPic"
     />
-  </div>
-  <div class="pagestructure">
-    <div>
+    <div class="farbcontainerYellow">
       <h1 class="pagetitle">Blog</h1>
     </div>
+  </div>
+
+  <div class="pagestructure">
     <div>
-      <LinearProgress color="secondary" />
-      <LinearProgress color="success" />
-      <LinearProgress color="inherit" />
     </div>
+    <h3>
+      Here you find some notes on the development process, thoughts on security
+      design, key learnings, that we value to share, things we figured out on
+      the way or other notes.
+    </h3>
     <div>
-      <GeneralIntro/>
-      <DesignProcess/>
+      <GeneralIntro />
+      <DesignProcess />
     </div>
   </div>
 </MainLayout>

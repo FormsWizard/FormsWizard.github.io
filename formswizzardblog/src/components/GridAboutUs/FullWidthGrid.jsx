@@ -12,8 +12,6 @@ import { Container } from "@mui/material";
 
 
 
-
-
 const ItemLeftAlign = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -86,7 +84,7 @@ export default function FullWidthGrid() {
                     <h3 class="font-semibold text-center">winzlieb</h3>
                 </Container>
                 <Container>
-                    <p class="text-center">ist Programmierer und feilt in verschiedenen Kontexten an Datenbanken. Er ist auch ein stolzer Vater und verbringt gerne seine freie Zeit damit, im Garten zu arbeiten.</p>
+                    <p class="text-center">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
                 </Container>
             </Grid>
         </Grid>
