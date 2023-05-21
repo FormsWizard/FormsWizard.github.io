@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import BlogpostLayout from "../layouts/BlogpostLayout.astro";
 
 // Import multiple files with Astro.glob
 //const posts = await Astro.glob('../content/*.md');
@@ -8,30 +8,30 @@ import { Content as GeneralIntro } from "../content/generalIntro.md";
 import { Content as DesignProcess } from "../content/designprocess/designprocess.md";
 ---
 
-<MainLayout>
-  <div class="object-position: top;">
-    <img
-      class="object-position: top;"
-      src="/src/images/projectIntro_picEdit3.png"
-      width="100%"
-      alt="projectIntroPic"
-    />
-    <div class="farbcontainerYellow">
-      <h1 class="pagetitle">Blog</h1>
+<BlogpostLayout>
+  <div class=" pagestructureBlog">
+    <div class="object-position: top;">
+      <img
+        class="headerImg object-position: top; w-screen"
+        src="/src/images/projectIntro_picEdit3.png"
+        alt="projectIntroPic"
+      />
+      <div class="farbcontainerYellow w-screen">
+        <h1 class="pagetitleBlog">Blog</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="pagestructure">
-    <div>
-    </div>
-    <h3>
-      Here you find some notes on the development process, thoughts on security
-      design, key learnings, that we value to share, things we figured out on
-      the way or other notes.
-    </h3>
-    <div>
-      <GeneralIntro />
-      <DesignProcess />
+    <div class="w-screen flex flex-col  items-center">
+      <div></div>
+      <h3 class="blogIntro">
+        Here you find some notes on the development process, thoughts on
+        security design, key learnings, that we value to share, things we
+        figured out on the way and other notes.
+      </h3>
+      <div class="blogContent flex flex-col">
+        <GeneralIntro />
+        <DesignProcess />
+      </div>
     </div>
   </div>
-</MainLayout>
+</BlogpostLayout>

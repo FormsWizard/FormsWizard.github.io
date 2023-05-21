@@ -1,7 +1,7 @@
 ---
 title: generalIntro
 ---
-
+## **Intro**
 **What are the essentials of a Software that is used in mostly stressfull & possibly chaotic contexts?** That's the question we've been researching in contact with different dedicated people, conducting interviews about different needs, thinking about different scenarios and different possible types of users. We have summarized the results of the research in a set of different fictional users, you can find them in our documentation on our github.
 
 **Also we asked chatGPT about the most important needs of disaster responders that concludes:**

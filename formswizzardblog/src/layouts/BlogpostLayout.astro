@@ -1,0 +1,41 @@
+---
+// component import
+import Footer from "../components/Footer";
+import StickyFooter from "../components/Footer/_StickyFooter";
+
+import "../styles/global.css";
+import MainHead from "./MainHead.astro";
+import NavBar from "../components/NavBar.astro";
+
+// style import
+import Styles from "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Forms_Wizard Project Blog",
+  description = "Check our blog..",
+} = Astro.props as Props;
+
+//const { navItem = "Default NavItem" } = Astro.props as Props;
+---
+
+<html lang="en">
+  <MainHead title={title} description={description} />
+  <body>
+    <div class="design-element-navbar w-screen">
+      <p></p>
+    </div>
+    <NavBar />
+    <div class="blogpage flex w-screen">
+      <div>
+        <slot>This Space is empty yet</slot>
+      </div>
+      <p class="h-screen"></p>
+    </div>
+    <StickyFooter />
+  </body>
+</html>
