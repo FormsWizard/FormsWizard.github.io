@@ -2,7 +2,7 @@
 title: generalIntro
 ---
 ## **Intro**
-**What are the essentials of a Software that is used in mostly stressfull & possibly chaotic contexts?** That's the question we've been researching in contact with different dedicated people, conducting interviews about different needs, thinking about different scenarios and different possible types of users. We have summarized the results of the research in a set of different fictional users, you can find them in our documentation on our github.
+**What are the essentials of a Software that is used in mostly stressfull & possibly chaotic contexts?** That's the question we've been researching in contact with different dedicated people, conducting interviews about different needs, thinking about different scenarios and different possible types of users. We have summarized the results of the research in a set of different fictional users, you can find them [here](https://github.com/FormsWizard/formswizard/wiki/ideas:persona) in our documentation on our github.
 
 **Also we asked chatGPT about the most important needs of disaster responders that concludes:**
 
@@ -17,6 +17,6 @@ title: generalIntro
 
 **Our answer:** 
 Food and water, of course, we can't provide that with software. But dear users: don't forget to eat and drink! 
-Security: We translate it with security and it is a core part of FormsWizard. We have put a lot of know-how into the secure data management aspect. 
+Security: We translate safety with security and it is a core part of FormsWizard. We have put a lot of know-how into the secure data management aspect. 
 As for the other needs: we hope that through FormsWizard the communities out there will be able to connect, organize and structure their communication, capacities and forces more easily.
 

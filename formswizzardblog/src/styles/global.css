@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -215,10 +215,22 @@ nav :where(ol, ul) {
 
 
   h1{
-    font-weight: 800;
+    font-weight: 400;
   }
   
   h1 span {
+    color: #3945c6;
+    color: hsl(var(--accent));
+  }
+
+
+  h2{
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+
+  }
+  
+  h2 span {
     color: #3945c6;
     color: hsl(var(--accent));
   }
@@ -371,8 +383,8 @@ align-items: center;
   }
   
   .link {
-    --type: transparent;
-    --fill: transparent;
+    /* --type: transparent; */
+    /* --fill: transparent; */
     display: flex;
     align-items: center;
     justify-items: center;
