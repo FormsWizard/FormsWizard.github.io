@@ -383,8 +383,8 @@ align-items: center;
   }
   
   .link {
-    /* --type: transparent; */
-    /* --fill: transparent; */
+    --type: transparent;
+    --fill: transparent;
     display: flex;
     align-items: center;
     justify-items: center;
