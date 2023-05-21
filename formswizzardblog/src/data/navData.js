@@ -14,7 +14,7 @@ const navData = [
     },
 
     {
-        name: "Documentation",
+        name: "Docs",
         path: "https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md",
     },
 ]

@@ -6,7 +6,7 @@ title: designprocess1
 We continued the exchange with the AI asking:
 **What are the best colors to design a supportive interface for an use in human disaster management?**
 
-When designing an interface for human disaster management, use colors with elements of safety and caution. Here are a few best practices for color selection:
+         When designing an interface for human disaster management, use colors with elements of safety and caution. Here are a few best practices for color selection:
 
          - Use shades of blue to provide a calming effect that will evoke a sense of safety and trust.
             - Consider using red sparingly for high priority alerts and pressing situations; too much can incite panic and anxiety.
