@@ -25,7 +25,7 @@ const ItemLeftAlign = styled(Paper)(({ theme }) => ({
 export default function FullWidthGrid() {
     return (
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-[#5660ce]">
         <div class="flexPersona">
             <div>
                 <Container>
