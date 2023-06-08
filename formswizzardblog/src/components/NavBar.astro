@@ -1,28 +1,83 @@
 ---
 //component imports
-import Link from "./Link.astro"
+import Link from "./Link.astro";
 
 //data imports
 import navData from "../data/navData";
+
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown,
+  DropdownItems,
+  OpenIcon,
+  CloseIcon,
+} from "astro-navbar";
 ---
 
-<nav aria-label="Primary">
-    <div class="navbar">
-
-        <a href={"../pages/about.astro"} aria-label="About"/>
-        <a href={"../pages/documentation.astro"} />
-        <a href={"../pages/index.astro"} />
-        <a href={"../pages/documentation.astro"} />
-        <ul>
-            {
-                navData.map((item) =>
-                    <Link
-                        text={item.name}
-                        href={item.path}
-                        style="primary"
-                        isFilled={false}
-                    />
-                )}
-        </ul>
+<nav class="navbar col">
+  <!-- <div class="navbar flex place-content-between place-content-evenly"> -->
+    <!-- <Astronav> -->
+    <div class="flex justify-between">
+      <a href={"/"}>Your Logo</a>
     </div>
+    <!-- // add `hidden` class by default for mobile
+          // `lg:flex` is to make it visible in desktop
+          // You may use custom CSS instead.
+        -->
+    <div class="flex justify-end">
+    <MenuIcon class="w-4 h-4 text-gray-800" />
+      <MenuItems class="hidden lg:flex justify-end">
+        <ul>
+          <li>
+            <Dropdown class="group">
+              <button class="invisibleBtn">
+                <span> Wizard Components</span>
+                <!-- You can style when dropdown is `open` -->
+                <svg class="group-open:rotate-90">...arrow..</svg>
+              </button>
+              <DropdownItems>
+                <div>
+                  <ul>
+                    <li>Generator</li>
+                    <li>Editor</li>
+                    <li>Analyser</li>
+                  </ul>
+                </div>
+              </DropdownItems>
+            </Dropdown>
+          </li>
+          <li><button class="invisibleBtn">Examples</button></li>
+          <li>
+            <button class="invisibleBtn">
+              <a
+                href={"https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"}
+                >Docs</a
+              ></button
+            >
+          </li>
+          <li>
+            <Dropdown class="group">
+              <button class="invisibleBtn">
+                <span> Resources</span>
+                <!-- You can style when dropdown is `open` -->
+                <svg class="group-open:rotate-180">...arrow..</svg>
+              </button>
+              <DropdownItems>
+                <ul>
+                  <li><a href={"/blog"} aria-label="About">Blog</a></li>
+                  <li>
+                    <a href={"/about"} aria-label="About">About Us</a>
+                  </li>
+                  <li>FAQ</li>
+                </ul>
+              </DropdownItems>
+            </Dropdown>
+          </li>
+        </ul>
+      </MenuItems>
+    </div>
+    <!-- </Astronav> -->
+  <!-- </div> -->
 </nav>

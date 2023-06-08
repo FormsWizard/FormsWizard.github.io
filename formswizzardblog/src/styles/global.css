@@ -13,15 +13,14 @@
 nav :where(ol, ul) {
     list-style: none;
   }
- /* 
+
+ 
   img,
   picture {
-    width: 100%;
     max-width: 100%;
     display: block;
   }
-  */
-
+ 
 
   p,
   h1,
@@ -156,7 +155,7 @@ nav :where(ol, ul) {
   }
   
   
-  button {
+  /* button {
     cursor: pointer;
     font-size: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
     font-size: var(--fs-sm);
@@ -171,8 +170,20 @@ nav :where(ol, ul) {
     box-shadow: 0.2px 0.5px 0.6px #8186bb4a, 0.6px 1.5px 1.8px -0.8px #8186bb4a,
       1.6px 3.8px 4.6px -1.7px #8186bb4a, 3.9px 9.3px 11.3px -2.5px #8186bb4a;
     box-shadow: var(--shadow-md);
-  }
+  } */
   
+  .invisibleBtn {
+    cursor: pointer;
+    font-size: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
+    font-size: var(--fs-sm);
+    padding: 0.5rem 1.5rem;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    place-items: end;
+    border: none;
+    margin-right: 5px;
+  }
 
   body {
     min-height: 100vh;
@@ -223,9 +234,9 @@ nav :where(ol, ul) {
     color: hsl(var(--accent));
   }
 
-  h1 a{
+  /* h1 a{
     color: #5660ce;
-  }
+  } */
 
   h2{
     font-weight: 500;
@@ -280,7 +291,7 @@ nav :where(ol, ul) {
     margin-left: 1.5em;
   }
   
-  .pagestructure {
+  .pagestructureCenter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -288,12 +299,20 @@ nav :where(ol, ul) {
     place-content: flex-start, space-between;
   }
   
-  .pagestructure > div {
+  .pagestructureCenter > div {
     padding: 10px;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .pagestructureBreakflow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;    
+    place-content: flex-start, space-between;
   }
 
   .pagestructureBlog {
@@ -308,7 +327,7 @@ nav :where(ol, ul) {
   }
 
 .blogIntro{
-  width: 80%;
+  width: 70%;
   font-weight: bold;
   justify-self: center;
 }
@@ -324,8 +343,8 @@ nav :where(ol, ul) {
   font-weight: bold;
   -webkit-text-stroke: 0.4px rgb(125, 67, 98);  
   font-weight:400;
-  color: #3945c6b6;
-  /* color: white; */
+  /* color: #3945c6b6; */
+  color: white;
   /* color: rgba(30, 23, 73, 0.621); */
   justify-content: center;
   align-items: center;
@@ -350,8 +369,8 @@ nav :where(ol, ul) {
   font-weight: bold;
   -webkit-text-stroke: 0.4px rgb(12, 1, 7);  
   font-weight:400;
-  color: #3945c6b6;
-  /* color: white; */
+  /* color: #3945c6b6; */
+  color: white;
   /* color: rgba(30, 23, 73, 0.621); */
   justify-content: center;
   align-items: center;
@@ -503,7 +522,7 @@ nav :where(ol, ul) {
      
   */
   
-  [aria-label="Primary"] {
+  /* [aria-label="Primary"] {
     width: 100%;
     padding-top: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
     padding-top: var(--space-xs);
@@ -514,33 +533,48 @@ nav :where(ol, ul) {
     box-shadow: 0.2px 0.5px 0.6px #8186bb40, 0.3px 0.8px 1px -1.2px #8186bb40,
       0.8px 1.9px 2.3px -2.5px #8186bb40;
     box-shadow: var(--shadow-sm);
-  }
+  } */
   
-  [aria-label="Primary"] ul {
+  /* [aria-label="Primary"] ul {
     display: flex;
     gap: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
     gap: var(--space-sm);
-  }
+  } */
   
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin-left: auto;
     margin-right: auto;
     padding-left: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
     padding-left: var(--space-md);
     padding-right: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
     padding-right: var(--space-md);
-
+    /* below adds space around the nav menu: */
+    /* padding-top: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
+    padding-top: var(--space-xs);
+    padding-bottom: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
+    padding-bottom: var(--space-xs); */
   }
 
+
   .design-element-navbar{
-    background-color: #6e75a8;
+    /* background-color: #6e75a8; */
+    background-color: #f9d739;
     width: 100%;
     height: 3px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
   }
   
   .logomark {
@@ -955,22 +989,21 @@ nav :where(ol, ul) {
   } */
 
 
-  .farbcontainerBlue{
-    /* background-color:#becf844e; */
-    background-color: #3945c67e;
+  .farbcontainerBlue1{
+    background-color: #1C175C;
     height: 1%;
     padding-top: 1%;
   }
   
 
-.farbcontainerGreen{
-  background-color:#f8f69280;
+.farbcontainerBlue2{
+  background-color:#3542ad;
   height: 2%;
   padding-top: 2%;
 }
 
 .farbcontainerYellow{
-  background-color:#cac0dd77;
+  background-color: #f9d739;
   height: 2%;
   padding-top: 2%;
 }
