@@ -2,9 +2,6 @@
 //component imports
 import Link from "./Link.astro";
 
-//data imports
-import navData from "../data/navData";
-
 import {
   Astronav,
   MenuItems,
@@ -16,7 +13,7 @@ import {
 } from "astro-navbar";
 ---
 
-<nav class="navbar col">
+<nav class="navbar">
   <!-- <div class="navbar flex place-content-between place-content-evenly"> -->
     <!-- <Astronav> -->
     <div class="flex justify-between">
@@ -34,7 +31,7 @@ import {
             <Dropdown class="group">
               <div>
               <button class="invisibleBtn ">
-                <span> Wizard Components </span>
+                <span > Wizard Components </span>
                 <!-- You can style when dropdown is `open` -->
                 <svg class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
