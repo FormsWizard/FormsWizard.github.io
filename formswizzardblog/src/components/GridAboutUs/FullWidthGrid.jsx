@@ -24,69 +24,43 @@ const ItemLeftAlign = styled(Paper)(({ theme }) => ({
 
 export default function FullWidthGrid() {
     return (
-
         <div class="flex flex-col items-center text-[#5660ce]">
-        <div class="flexPersona">
-            <div>
-                <Container>
+            <div class="flex flex-row">
+                <div >
                     <img class="object-center" src=" /src/images/Avatare/ja_ob.png" width="350rem" alt="Avatar1" />
-                </Container>
-            </div>
-
-            <div>
-                <Container>
+                </div>
+                <div>
                     <h3 class="font-semibold text-center">ja_ob</h3>
-                </Container>
-                <Container>
                     <p class="leading-relaxed text-center">... will say 'hi' in a bit ...</p>
-                </Container>
+                </div>
             </div>
-        </div>
-
-
-            <div>
-                 <Container>
-                     <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
-                 </Container>
-             </div>
-             <div>
-                 <Container>
-                     <h3 class="font-semibold text-center">jO3</h3>
-                 </Container>
-                 <Container>
-                     <p class="leading-relaxed text-center">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
-                 </Container>
-             </div>
-
-
-             <div>
-                 <Container>
-                     <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
-                 </Container>
-             </div>
-             <div>
-                 <Container>
-                     <h3 class="font-semibold text-center">sam_</h3>
-                     <p class="leading-relaxed text-center">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
-                 </Container>
-             </div>
-
-
-
-             <div>
-                 <Container>
-                     <img src="/src/images/Avatare/seb_pic.png" alt="Avatar4" width="400rem" />
-                 </Container>
-             </div>
-
-             <div>
-                 <Container>
-                     <h3 class="font-semibold text-center">winzlieb</h3>
-                 </Container>
-                 <Container>
-                     <p class="text-center">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
-                 </Container>
-             </div>
+            <div class="flex flex-row">
+                <div>
+                    <h3 class="font-semibold text-center">jO3</h3>
+                    <p class="leading-relaxed text-center">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
+                </div>
+                <div>
+                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
+                </div>
+                <div>
+                    <h3 class="font-semibold text-center">sam_</h3>
+                    <p class="leading-relaxed text-center">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div>
+                    <h3 class="font-semibold text-center">winzlieb</h3>
+                    <p class="text-center">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
+                </div>
+                <div>
+                    <img src="/src/images/Avatare/seb_pic.png" alt="Avatar4" width="400rem" />
+                </div>
+            </div>
         </div>
     );
 }

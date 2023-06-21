@@ -7,16 +7,19 @@ import Link from '@mui/material/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
-      { 'FormsWizard'}
-      {new Date().getFullYear()}
-      {'.'}
-      <br></br>
-      <Link color="inherit" href="https://prototypefund.de/">
-      <img src="/formswizzardblog/src/images/PrototypeLogo/PrototypeFundLogo.png" width="1rem" height="1rem" alt="Logo" ></img>
-        PrototypeFund
-      </Link>{' '}
-    </Typography>
+    <div class="flex items-center">
+      <div>
+        <p>FormsWizard</p>
+        {new Date().getFullYear()}
+        {'.'}
+      </div>
+      <div class="flex items-center">
+        <Link color="inherit" href="https://prototypefund.de/">
+          <img src="/formswizzardblog/src/images/PrototypeLogo/PrototypeFundLogo.png" width="1rem" height="1rem" alt="Logo" ></img>
+          PrototypeFund
+        </Link>{' '}
+      </div>
+    </div>
   );
 }
 
@@ -26,22 +29,12 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
         width: '100%',
         bottom: 0,
         position: 'fixed',
       }}
     >
       <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-        <Typography variant="h2" component="h1" gutterBottom>
-         {'empty'} 
-        </Typography>
-        <Typography variant="h5" component="h2" gutterBottom>
-          {'Add: Anything repeated.'}
-        </Typography>
-        <Typography variant="body1">Sticky footer placeholder.</Typography>
-      </Container>
       <Box
         component="footer"
         sx={{

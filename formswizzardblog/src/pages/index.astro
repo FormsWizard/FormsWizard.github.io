@@ -5,8 +5,8 @@ import Icon from "@mui/material/Icon";
 ---
 
 <MainLayout title="Home">
-  <div class="mainContentBox flex flex-col items-center">
-    <div class="pagetitleStartBackground">
+  <div class="wrapper">
+    <div class="header">
       <!-- <div class="w-screen"> //tried: rausgenommen statt div ohne klasse vorher -->
       <div class="farbcontainerBlue1">
         <p></p>
@@ -15,40 +15,75 @@ import Icon from "@mui/material/Icon";
         <h1 class="pagetitleStart">the forms_Wizard Project</h1>
       </div>
     </div>
-    <div class="pagestructureCenter">
+    <div class="page-main">
+      <div class="page-intro">
+        <h1 class="leading-relaxed text-center mt-6">
+          In civic organizing contexts there are usually few resources and a lot
+          of structure is needed to pool the collected energy. <br />
+          <a href="/blog"><u>Learn more</u></a> and follow the development process
+          of <br />a tool that supports civic engagement in data management.
+          <br />
+          <br />
+        </h1>
+      </div>
+      <div class="wrap-element-a">
         <div>
-          <p></p>
-        </div>
-        <div class="flex flex-wrap">
-          <h1 class="leading-relaxed text-center mt-6">
-            <a href="/blog"><u>Learn more</u></a> and follow the development process
-            of <br />a tool that supports civic engagement in data management
-            <br />
-            <br />
-          </h1>
+          <img
+            src="/src/images/iconsFront/noun-empowering-2202388(1).png"
+            class="icon-front"
+          />
         </div>
         <div>
           <p class="leading-relaxed text-[#5660ce]">
-              In civic organizing contexts there are usually few resources and
-              a lot of structure is needed to pool the collected energy. With
-              forms_Wizard, we aim to support crews in various use cases to
-              collect and evaluate the data they need. In times of increasing
-              crises, not only in face of the climate catastrophe, we see the
-              necessity of civic engagement.
+            The Forms_Wizard aims to supports crews in various use cases to
+            collect and evaluate the data they need. This can happen self hosted
+            or on our infrastructures.
           </p>
         </div>
-        <div><p></p></div>
+      </div>
+      <div class="wrap-element">
+        <div>
+          <p class="leading-loose text-[#5660ce] text-right">
+            A core part of the WizardPac is the evaluation tool - with the
+            DataWizard you can visualize shift plans, show locations on a map,
+            evaluate connections on a network graphs and more. <br />Also we
+            integrated an interdependence between dataset and visualization so
+            that you can effictively make use of the different view ports.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/src/images/iconsFront/noun-analysis-3694231(1).png"
+            class="icon-front"
+          />
+        </div>
+      </div>
+      <div class="wrap-element-a">
+        <div>
+          <img
+            src="/src/images/iconsFront/noun-cyber-security-3685949(1).png"
+            class="icon-front"          />
+        </div>
         <div>
           <p class="leading-loose text-[#5660ce]">
-            While developing the forms_Wizard project, we focus on independence in development [it's all open source], customizability [we see the
-            broad spectrum of civic engagement], and consideration of safety aspects.
+            Security by Design is the leading concept in the WizardPac build. In combination with the Open Source distribution you dont need to trust your data into a black box.
           </p>
         </div>
-      <div>
-        <!-- <a href="/blog" class="p-5"> -->
-        <!-- <FastForwardIcon sx={{ size: 10 }} aria-label="learn more" /> -->
-        <!-- </a> -->
-        <!-- <Icon /> -->
+      </div>
+      <div class="wrap-element">
+        <div>
+          <p class="leading-relaxed text-[#5660ce] text-right">
+            We believe in civic engagement - in times of increasing crises, not
+            only in face of the climate catastrophe, we see the necessity of
+            individuals organizing in communities. In that menner the whole
+            WizardPac transparently and collaboratively build as Open-Source.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/src/images/iconsFront/noun-breathe-clean-air-3046872(1).png"
+            class="icon-front"          />
+        </div>
       </div>
     </div>
   </div>

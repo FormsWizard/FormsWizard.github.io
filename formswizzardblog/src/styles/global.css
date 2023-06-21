@@ -31,8 +31,6 @@ h6 {
   word-wrap: break-word;
 }
 
-
-
 :root {
   --_hue: 235;
   --bkg--light: var(--_hue) 25% 97%;
@@ -175,29 +173,25 @@ h6 {
     box-shadow: var(--shadow-md);
   } */
 
+@media screen and (min-width: 768px) {
+}
+
 .invisibleBtn {
   cursor: pointer;
   font-size: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
   font-size: var(--fs-sm);
   padding: 0.5rem 1.5rem;
-  /* display: grid; */
   display: flex;
   justify-content: space-between;
-  /* align-content: flex-end; */
-  /* align-items: center;
-    justify-items: end; */
-  place-items: end;
   border: none;
   margin-right: 5px;
 }
 
 body {
   min-height: 100vh;
-  display: grid;
-  /* align-items: center; */
-  /* justify-items: center; */
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  /* grid-template-rows: auto 1fr auto; */
   background-color: #0e0248;
   /* background-color: hsl(var(--bkg)); */
   color: #ffffff;
@@ -212,8 +206,8 @@ body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
-  
-  /* .h1,
+
+/* .h1,
   .h2,
   .h3,
   .h4,
@@ -224,24 +218,22 @@ body {
   }
   */
 
-  /* .h1 {
+/* .h1 {
     font-size: max(2.8rem, min(calc(2.31rem + 2.43vw), 4.2rem));
     font-size: var(--fs-2xl);
     max-width: 20ch;
     max-width: var(--content-xs);
   }  */
 
-
-  @media screen and (max-width: 600px) {
-    body {
-      background-color: red;
-    }
-  }
-
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
 
-    /* TODO: Hier Groeßenberechnung noch anpassen */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  /* TODO: Hier Groeßenberechnung noch anpassen */
 
   h1 {
     font-weight: 400;
@@ -251,75 +243,65 @@ body {
   h1 a {
     font-size: 1.8vw;
   }
-  
+
   h1 span {
     color: #3945c6;
     color: hsl(var(--accent));
   }
-  
+
   h2 {
     font-size: 1.5vw;
     font-weight: 500;
     font-family: "Work Sans", sans-serif;
   }
-  
+
   h2 span {
     color: #3945c6;
     color: hsl(var(--accent));
   }
-  
-  p{
+
+  p {
     font-size: 1.8vw;
   }
-  
 }
-  
 
-  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
-    /* TODO: Hier Groeßenberechnung noch anpassen */
+  /* TODO: Hier Groeßenberechnung noch anpassen */
 
   h1 {
     font-weight: 400;
-    font-size: 1.8vw;
+    font-size: 1.8em;
   }
-  
+
   h1 a {
-    font-size: 1.8vw;
+    font-size: 1.8em;
   }
 
   h1 span {
     color: #3945c6;
     color: hsl(var(--accent));
   }
-  
+
   h2 {
     font-weight: 500;
     font-family: "Work Sans", sans-serif;
     font-size: 1.5vw;
-
   }
-  
+
   h2 span {
     color: #3945c6;
     color: hsl(var(--accent));
   }
-   
-  p{
-    font-size: 1.8vw;
+
+  p {
+    font-size: 1.6rem;
   }
-  
 }
-
-
-
-
-
 
 /* p a {
   font-size: calc(15px + 0.390625vw);
 } */
-
 
 /* .h1,
 .content h1 {
@@ -368,23 +350,42 @@ small {
   margin-left: 1.5em;
 }
 
-ul{
+ul {
   padding-right: 32px;
 }
 
-.pagestructureCenter {
+.page-main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   place-content: center;
-  width: 100%
+  align-items: center;
+  width: 90%;
 }
 
-.pagestructureCenter > div {
-  padding: 10px;
+@media (min-width: 769px) {
+  .wrap-element .wrap-element-a{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-element {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    place-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+.page-main > div {
+  padding: 5%;
   justify-content: center;
 }
-
 
 .pagestructureBlog {
   display: flex;
@@ -421,15 +422,12 @@ ul{
   padding-bottom: 5px;
 }
 
-.pagetitleStartBackground {
+.header {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
-
-
 
 .pagetitleStart {
   /* display: flex; */
@@ -444,8 +442,6 @@ ul{
   align-content: center;
   /* width: 70%; */
 }
-
-
 
 .pagetitleAbout {
   display: flex;
@@ -666,7 +662,6 @@ svg {
   transform: rotate(180deg);
 }
 
-
 .logomark {
   display: grid;
   align-items: center;
@@ -713,9 +708,38 @@ svg {
   }
   */
 
- .mainContentBox{
-  width: 100%
- } 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+/* Relative Icon Sizing */
+
+@media (max-width: 480px) {
+.icon-front{
+  width: 100px
+}
+}
+
+@media (min-width: 481px) {
+  .icon-front{
+    width: 250px
+  }
+}
+
+@media (min-width: 798px) {
+    .icon-front{
+      width: 400px
+    }
+  }
 
 @media (min-width: 480px) {
   :where(footer) div {
@@ -724,14 +748,13 @@ svg {
   }
 }
 
-/*
-  :where(footer) div a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-  }
-  */
+:where(footer) div a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
 /*   
   .about {
     display: grid;
@@ -843,55 +866,7 @@ svg {
   box-shadow: 0 0 0 0.2em hsl(var(--bkg)), 0 0 0 0.4em hsl(var(--accent));
 }
 
-/* .card {
-  display: grid;
-  background-color: #fcfcfd;
-  background-color: hsl(var(--muted));
-  padding: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-  padding: var(--space-md);
-  border-radius: 0.4em;
-  border-radius: var(--radius-md);
-  box-shadow: 0.2px 0.5px 0.6px #8186bb40, 0.3px 0.8px 1px -1.2px #8186bb40,
-    0.8px 1.9px 2.3px -2.5px #8186bb40;
-  box-shadow: var(--shadow-sm);
-}
-
-.card .badge {
-  --accent: var(--txt);
-}
-
-.card [aria-hidden="true"] {
-  margin-left: calc(max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem)) * -1);
-  margin-left: calc(var(--space-md) * -1);
-  margin-right: calc(max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem)) * -1);
-  margin-right: calc(var(--space-md) * -1);
-  margin-top: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-  margin-top: var(--space-md);
-  margin-bottom: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-  margin-bottom: var(--space-md);
-} */
-
-/* .card img {
-  box-shadow: 0.2px 0.5px 0.6px #8186bb40, 0.3px 0.8px 1px -1.2px #8186bb40,
-    0.8px 1.9px 2.3px -2.5px #8186bb40;
-  box-shadow: var(--shadow-sm);
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.card .content {
-  display: grid;
-  gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: var(--space-xs);
-  gap: var(--space-xs);
-} */
-
-header {
+/* header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -901,9 +876,9 @@ header {
   grid-gap: var(--space-sm);
   gap: var(--space-sm);
   text-align: center;
-}
+} */
 
-header .container {
+/* header .container {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -917,73 +892,7 @@ header .container {
   margin-top: var(--space-lg);
   margin-bottom: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
   margin-bottom: var(--space-sm);
-}
-
-.post-content {
-  display: grid;
-  justify-content: center;
-  padding: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
-  padding: var(--space-md);
-  margin-top: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  margin-top: var(--space-lg);
-  margin-bottom: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  margin-bottom: var(--space-lg);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1500px;
-}
-
-.post-content div {
-  display: grid;
-  gap: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
-  grid-gap: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
-  grid-gap: var(--space-sm);
-  gap: var(--space-sm);
-}
-
-.post-content .sidebar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  gap: var(--space-lg);
-  margin-top: max(2.25rem, min(calc(1.6rem + 3.26vw), 4.13rem));
-  margin-top: var(--space-xl);
-}
-
-@media (min-width: 768px) {
-  .post-content .sidebar {
-    margin: 0;
-  }
-}
-
-.post-content .sidebar aside {
-  display: grid;
-  gap: max(0.31rem, min(calc(0.18rem + 0.65vw), 0.69rem));
-  grid-gap: max(0.31rem, min(calc(0.18rem + 0.65vw), 0.69rem));
-  grid-gap: var(--space-2xs);
-  gap: var(--space-2xs);
-  padding: 0;
-}
-
-@media (min-width: 480px) {
-  .post-content .sidebar aside {
-    flex: 1 1 40%;
-  }
-}
-
-@media (min-width: 768px) {
-  .post-content .sidebar aside {
-    text-align: left;
-    justify-content: start;
-    justify-items: start;
-  }
-
-  .post-content .sidebar aside .categories {
-    justify-content: start;
-  }
-}
+} */
 
 .headerImg {
   height: auto;
@@ -1093,8 +1002,6 @@ header .container {
   padding-top: 2%;
   width: 100%;
 }
-
-
 
 .farbcontainerYellow {
   background-color: #f9d739;

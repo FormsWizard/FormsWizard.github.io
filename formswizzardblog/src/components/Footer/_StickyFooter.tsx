@@ -1,47 +1,51 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
 function FooterContent() {
-    return (
-      <Typography>
-        <div variant="body2" color="text.secondary" justifyContent="center" alignItems="center">
-          <div >
+  return (
+    <div class="flex flex-col justify-center">
+       <div class="flex flex-col align-center">
+          <div>
             <p>
-            {'FormsWizard'}
-            {' '}
-            {new Date().getFullYear()}
-            {''} <br></br><br></br>
-            {'Funded through:'}
+              {'FormsWizard'}
+              {' '}
+              {new Date().getFullYear()}
+              {''}
             </p>
           </div>
-
-          <div color="text.secondary" justifyContent="center" alignItems="center" >
+          <div>
             <p>
-            <Link color="inherit" href="https://prototypefund.de/">
-            <img src="/src/images/PrototypeLogo/PrototypeFundLogo.png" width="54rem" height="54rem" alt="Logo" ></img>
-              Prototype Fund
-            </Link>{' '}
-            </p>
-          </div>
-
-          <div color="text.secondary" justifyContent="center" alignItems="center">
-            <p>
-            <Link color="inherit" href="https://www.bmbf.de/bmbf/de/home/home_node.html">
-              <img src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png" width="150rem" height="150rem" alt="Logo_Bundesministerium" ></img>
-            </Link>{' '}
+              Funded through:
             </p>
           </div>
         </div>
-      </Typography>
-    );
-  }
+      <div class="flex ">
+        <div justifyContent="center" alignItems="center" >
+          <p>
+            <Link color="inherit" href="https://prototypefund.de/">
+              <img src="/src/images/PrototypeLogo/PrototypeFundLogo.png" width="54rem" height="54rem" alt="Logo" ></img>
+              Prototype Fund
+            </Link>{' '}
+          </p>
+        </div>
+
+        <div class="flex align-center">
+          <p>
+            <Link color="inherit" href="https://www.bmbf.de/bmbf/de/home/home_node.html">
+              <img src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png" width="150rem" height="150rem" alt="Logo_Bundesministerium" ></img>
+            </Link>{' '}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 
-export default function StickyFooter() {
+export default function StickyFooterTS() {
   return (
     <Box
       sx={{
@@ -54,11 +58,6 @@ export default function StickyFooter() {
       }}
     >
       <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="lg" font-family="surt-regular">
-        <Typography variant="h5" component="h2" gutterBottom>
-          {''}
-        </Typography>
-      </Container>
       <Box
         component="footer"
         sx={{
