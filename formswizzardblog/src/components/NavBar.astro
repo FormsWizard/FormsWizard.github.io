@@ -13,72 +13,74 @@ import {
 } from "astro-navbar";
 ---
 
-<nav class="navbar">
-  <!-- <div class="navbar flex place-content-between place-content-evenly"> -->
-    <!-- <Astronav> -->
-    <div class="flex justify-between">
-      <a href={"/"}>Your Logo</a>
-    </div>
-    <!-- // add `hidden` class by default for mobile
-          // `lg:flex` is to make it visible in desktop
-          // You may use custom CSS instead.
-        -->
-    <div class="flex justify-end">
-    <MenuIcon class="w-4 h-4 text-gray-800" />
-      <MenuItems class="hidden lg:flex justify-end">
-        <ul>
-          <li>
-            <Dropdown class="group">
-              <div>
-              <button class="invisibleBtn ">
-                <span > Wizard Components </span>
-                <!-- You can style when dropdown is `open` -->
-                <svg class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-              </button>
-              <DropdownItems class=" flex justify-end">
-             
-                  <ul>
-                    <li>Generator</li>
-                    <li>Editor</li>
-                    <li>Analyser</li>
-                  </ul>
-            
-              </DropdownItems>
-            </div>
-            </Dropdown>
-          </li>
-          <li><button class="invisibleBtn">Examples (inactive)</button></li>
-          <li>
-            <button class="invisibleBtn">
-              <a
-                href={"https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"}
-                >Docs</a
-              ></button
+<header class="header">
+  <a href="/" class="logo">Your Logo</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li>
+      <Dropdown class="group">
+          <button class="invisibleBtn">
+            <span> Wizard Components</span>
+            <!-- You can style when dropdown is `open` -->
+            <svg
+              class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              aria-hidden="true"
             >
-          </li>
-          <li>
-            <Dropdown class="group">
-              <button class="invisibleBtn">
-                <span> Resources</span>
-                <!-- You can style when dropdown is `open` -->
-               <svg class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-              </button>
-              <DropdownItems>
-                <ul>
-                  <li><a href={"/blog"} aria-label="About">Blog</a></li>
-                  <li>
-                    <a href={"/about"} aria-label="About">About Us</a>
-                  </li>
-                  <li>FAQ (inactive)</li>
-                </ul>
-              </DropdownItems>
-            </Dropdown>
-          </li>
-        </ul>
-      </MenuItems>
-    </div>
-    <!-- </Astronav> -->
-  <!-- </div> -->
-</nav>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+            <DropdownItems class="flex justify-end">
+              <ul>
+                <li><a href="#Generator">Generator</a></li>
+                <li><a href="#Editor">Editor</a></li>
+                <li><a href="#Analyser">Analyser</a></li>
+              </ul>
+            </DropdownItems>
+          </button>
+      </Dropdown>
+    </li>
+    <li><a href="#examples">Examples (inactive)</a></li>
+    <li>
+      <a
+        href="https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"
+        >Docs</a>
+    </li>
+    <li>
+      <Dropdown class="group">
+        <button class="invisibleBtn">
+          <span> Resources</span>
+          <!-- You can style when dropdown is `open` -->
+          <svg
+            class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+          <DropdownItems>
+            <ul>
+              <li><a href={"/blog"} aria-label="Blog">Blog</a></li>
+              <li><a href={"/about"} aria-label="About">About Us</a></li>
+              <li><a href={"/FAQ"} aria-label="FAQ">FAQ (inactive)</a></li>
+            </ul>
+          </DropdownItems>
+        </button>
+      </Dropdown>
+    </li>
+  </ul>
+</header>
