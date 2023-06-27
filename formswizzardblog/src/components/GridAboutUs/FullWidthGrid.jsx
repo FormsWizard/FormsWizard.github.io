@@ -24,38 +24,38 @@ const ItemLeftAlign = styled(Paper)(({ theme }) => ({
 
 export default function FullWidthGrid() {
     return (
-        <div class="flex flex-col items-center text-[#5660ce]">
-            <div class="flex flex-row">
+        <div class="page-main text-[#5660ce]">
+            <div class="wrap-element-a">
                 <div >
-                    <img class="object-center" src=" /src/images/Avatare/ja_ob.png" width="350rem" alt="Avatar1" />
+                    <img class="w-30 md:w-52 lg:w-88" src=" /src/images/Avatare/ja_ob.png"  alt="Avatar1" />
                 </div>
                 <div>
-                    <h3 class="font-semibold text-center">ja_ob</h3>
-                    <p class="leading-relaxed text-center">... will say 'hi' in a bit ...</p>
+                    <h3 class="font-semibold text-center md:text-left">ja_ob</h3>
+                    <p class="leading-relaxed text-center md:text-left">... will say 'hi' in a bit ...</p>
                 </div>
             </div>
-            <div class="flex flex-row">
+            <div class="wrap-element">
                 <div>
-                    <h3 class="font-semibold text-center">jO3</h3>
-                    <p class="leading-relaxed text-center">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
+                    <h3 class="font-semibold text-center md:text-right">jO3</h3>
+                    <p class="leading-relaxed text-center md:text-right">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
                 </div>
                 <div>
-                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2" />
+                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2"/>
                 </div>
             </div>
-            <div class="flex flex-row">
+            <div class="wrap-element-a">
                 <div>
                     <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
                 </div>
                 <div>
-                    <h3 class="font-semibold text-center">sam_</h3>
-                    <p class="leading-relaxed text-center">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
+                    <h3 class="font-semibold text-center md:text-left">sam_</h3>
+                    <p class="leading-relaxed text-center md:text-left">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
                 </div>
             </div>
-            <div class="flex flex-row">
+            <div class="wrap-element">
                 <div>
-                    <h3 class="font-semibold text-center">winzlieb</h3>
-                    <p class="text-center">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
+                    <h3 class="font-semibold text-center md:text-right">winzlieb</h3>
+                    <p class="text-center md:text-right">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
                 </div>
                 <div>
                     <img src="/src/images/Avatare/seb_pic.png" alt="Avatar4" width="400rem" />

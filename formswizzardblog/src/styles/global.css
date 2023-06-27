@@ -225,93 +225,25 @@ body {
     max-width: var(--content-xs);
   }  */
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
-}
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  /* TODO: Hier Groeßenberechnung noch anpassen */
 
-  h1 {
-    font-weight: 400;
-    font-size: 1.8vw;
-  }
 
-  h1 a {
-    font-size: 1.8vw;
-  }
+/* fontsizes: -----------------------------------------------*/
 
-  h1 span {
-    color: #3945c6;
-    color: hsl(var(--accent));
-  }
 
-  h2 {
-    font-size: 1.5vw;
-    font-weight: 500;
-    font-family: "Work Sans", sans-serif;
-  }
-
-  h2 span {
-    color: #3945c6;
-    color: hsl(var(--accent));
-  }
-
-  p {
-    font-size: 1.8vw;
-  }
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  /* TODO: Hier Groeßenberechnung noch anpassen */
-
-  h1 {
-    font-weight: 400;
-    font-size: 1.8em;
-  }
-
-  h1 a {
-    font-size: 1.8em;
-  }
-
-  h1 span {
-    color: #3945c6;
-    color: hsl(var(--accent));
-  }
-
-  h2 {
-    font-weight: 500;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.5vw;
-  }
-
-  h2 span {
-    color: #3945c6;
-    color: hsl(var(--accent));
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-}
-
-/* p a {
+p a {
   font-size: calc(15px + 0.390625vw);
-} */
+}
 
-/* .h1,
+.h1,
 .content h1 {
   font-size: max(2.2rem, min(calc(2.2rem + 1.29vw), 2.89rem));
   font-size: var(--fs-xl);
   max-width: 30ch;
   max-width: var(--content-sm);
-} */
+} 
 
-/* .h2,
+.h2,
 .content h2 {
   font-size: max(1.94rem, min(calc(1.69rem + 1.29vw), 2.69rem));
   font-size: var(--fs-xl);
@@ -343,7 +275,10 @@ p {
 small {
   font-size: max(0.78rem, min(calc(0.75rem + 0.17vw), 0.88rem));
   font-size: var(--fs-sm);
-} */
+}
+
+
+/* 
 
 .content ul,
 .content ol {
@@ -353,6 +288,7 @@ small {
 ul {
   padding-right: 32px;
 }
+*/
 
 .page-main {
   display: flex;
@@ -368,6 +304,8 @@ ul {
   justify-content: center;
 }
 
+
+
 @media (max-width: 768px) {
   .wrap-element {
     display: flex;
@@ -378,26 +316,47 @@ ul {
   }
 }
 
+@media (max-width: 768px) {
+  .wrap-element-a {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
+
 @media (min-width: 769px) {
-  .wrap-element .wrap-element-a {
+  .wrap-element  {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     place-content: center;
     align-items: center;
   }
 }
 
+@media (min-width: 769px) {
+  .wrap-element-a {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+  }
+}
+
+
 .pagestructureBlog {
   display: flex;
   flex-wrap: wrap;
+}
   /* place-content: space-between center; */
   /* place-content: flex-start, space-between; */
-  flex-direction: column;
-  max-width: 100%;
+  /* flex-direction: column;
+  max-width: 100%; */
   /* min-height: 100vh; */
   /* width: 60% */
-}
+/* } */
+
 
 .blogIntro {
   width: 70%;
@@ -823,7 +782,7 @@ svg {
 .wrapper {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -835,21 +794,21 @@ svg {
 
 /* Relative Icon Sizing */
 
-@media (max-width: 480px) {
+@media (max-width: 690px) {
   .icon-front {
-    width: 100px;
+    width: 230px;
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 691px) {
   .icon-front {
-    width: 250px;
+    width: 350px;
   }
 }
 
-@media (min-width: 798px) {
+@media (min-width: 789px) {
   .icon-front {
-    width: 400px;
+    width: 480px;
   }
 }
 
