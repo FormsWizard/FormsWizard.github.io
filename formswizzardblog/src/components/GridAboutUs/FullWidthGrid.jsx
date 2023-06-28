@@ -27,7 +27,7 @@ export default function FullWidthGrid() {
         <div class="page-main text-[#5660ce]">
             <div class="wrap-element-a">
                 <div >
-                    <img class="w-30 md:w-52 lg:w-88" src=" /src/images/Avatare/ja_ob.png"  alt="Avatar1" />
+                    <img class="w-30 md:w-52 lg:w-98" src=" /src/images/Avatare/ja_ob.png"  alt="Avatar1" />
                 </div>
                 <div>
                     <h3 class="font-semibold text-center md:text-left">ja_ob</h3>

@@ -24,9 +24,9 @@ function FooterContent() {
         </div>
       <div class="flex ">
         <div justifyContent="center" alignItems="center" >
-          <p>
+          <p >
             <Link color="inherit" href="https://prototypefund.de/">
-              <img src="/src/images/PrototypeLogo/PrototypeFundLogo.png" width="54rem" height="54rem" alt="Logo" ></img>
+              <img src="/src/images/PrototypeLogo/PrototypeFundLogo.png" width="54rem" height="54rem" alt="Logo"></img>
               Prototype Fund
             </Link>{' '}
           </p>
@@ -61,7 +61,7 @@ export default function StickyFooterTS() {
       <Box
         component="footer"
         sx={{
-          py: 4,
+          py: 3,
           px: 30,
           mt: 'auto',
         }}
