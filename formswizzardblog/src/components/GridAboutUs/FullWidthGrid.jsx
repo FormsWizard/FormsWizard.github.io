@@ -25,7 +25,6 @@ const ItemLeftAlign = styled(Paper)(({ theme }) => ({
 export default function FullWidthGrid() {
     return (
         <div class="page-main text-[#5660ce]">
-
             <div class="wrap-element-a">
                 <div class="m-0 md:mr-20">
                     <img src="/src/images/Avatare/jO3_.png" width="700rem" alt="Drawing of j03" />
