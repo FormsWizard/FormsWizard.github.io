@@ -6,25 +6,26 @@ import BlogpostLayout from "../layouts/BlogpostLayout.astro";
 // Import a single file
 import { Content as GeneralIntro } from "../content/generalIntro.md";
 import { Content as DesignProcess } from "../content/designprocess/designprocess.md";
-import {Content as InformationArchitecture } from "../content/informationArchitecture.md";
+import { Content as InformationArchitecture } from "../content/informationArchitecture.md";
 ---
 
 <BlogpostLayout>
-  <div class=" pagestructureBlog">
-    <div class="object-position: top;">
+
+    <div class="header">
       <div class="farbcontainerBlue1">
         <p></p>
       </div>
-      <div class="farbcontainerBlue2 w-screen">
+      <div class="farbcontainerBlue2 leading-relaxed p-10">
         <h1 class="pagetitleBlog">Blog</h1>
       </div>
     </div>
-
-    <div class="w-screen flex flex-col  items-center">
+    <div class="pagestructureBlog">
       <div><p></p></div>
-      <h3 class="blogIntro text-center leading-relaxed text-[#5660ce]">
-        Here you find some notes on the development process, thoughts on
-        security design, key learnings that we value to share and other notes.
+    <div class="w-screen flex flex-col items-center">
+      <h3 class="blogIntro leading-relaxed text-[#5660ce]">
+        Read about our explorations during the FORMS_Wizard development process,
+        thoughts on security design, key learnings that we value to share and
+        other notes.
       </h3>
       <div><p></p></div>
       <div class="blogContent flex flex-col">

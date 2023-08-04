@@ -25,42 +25,47 @@ const ItemLeftAlign = styled(Paper)(({ theme }) => ({
 export default function FullWidthGrid() {
     return (
         <div class="page-main text-[#5660ce]">
+
             <div class="wrap-element-a">
-                <div >
-                    <img class="w-30 md:w-52 lg:w-98" src=" /src/images/Avatare/ja_ob.png"  alt="Avatar1" />
+                <div class="m-0 md:mr-20">
+                    <img src="/src/images/Avatare/jO3_.png" width="700rem" alt="Drawing of j03" />
                 </div>
                 <div>
-                    <h3 class="font-semibold text-center md:text-left">ja_ob</h3>
-                    <p class="leading-relaxed text-center md:text-left">... will say 'hi' in a bit ...</p>
+                    <h3 class="font-semibold text-center md:text-left">jO3</h3>
+                    <p class="leading-relaxed text-center md:text-left">is our specialist for backend and a master in security related aspects. From architecture, implementation, project management and communication with first users and funding related wideview - j03  creates the necessary skeleton and outlines for the project. </p>
                 </div>
             </div>
-            <div class="wrap-element">
-                <div>
-                    <h3 class="font-semibold text-center md:text-right">jO3</h3>
-                    <p class="leading-relaxed text-center md:text-right">Specialist for backend and especially security related issues. From architecture, implementation, project management and communication with first users - j03  creates the necessary skeleton and outlines for the project.</p>
-                </div>
-                <div>
-                    <img src="/src/images/Avatare/jO3_.png" width="400rem" alt="Avatar2"/>
-                </div>
-            </div>
-            <div class="wrap-element-a">
-                <div>
-                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Avatar3" width="200rem" />
-                </div>
-                <div>
-                    <h3 class="font-semibold text-center md:text-left">sam_</h3>
-                    <p class="leading-relaxed text-center md:text-left">Enthusiast for technology and society - political scientist, sociology graduate and painter - came to programming via the fascination how tech shapes reality.</p>
-                </div>
-            </div>
+
             <div class="wrap-element">
                 <div>
                     <h3 class="font-semibold text-center md:text-right">winzlieb</h3>
-                    <p class="text-center md:text-right">is a programmer and works on databases in various contexts. He is also a proud father and enjoys spending his free time in the garden.</p>
+                    <p class="text-center md:text-right">is a passionate programmer who already build up few open source projects next to his main job and his life as a father. He loves to connect his technical expertise with his various fields of manual civic engagement. </p>
                 </div>
-                <div>
-                    <img src="/src/images/Avatare/seb_pic.png" alt="Avatar4" width="400rem" />
+                <div class="m-0 md:ml-20">
+                    <img src="/src/images/Avatare/seb_pic.png" alt="Drawing of WNZ" width="700rem" />
                 </div>
             </div>
+
+            <div class="wrap-element-a">
+                <div class="m-0 md:mr-20">
+                    <img src=" /src/images/Avatare/ja_ob.png"  alt="Drawing of ja_ob" width="500rem"/>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-center md:text-left">ja_ob</h3>
+                    <p class="leading-relaxed text-center md:text-left">likes to program and yogurt because it's not crumbly in the keyboard and combines so well. Went from *** to JavaScript to Web-Components to React to FormsWizard.</p>
+                </div>
+            </div>
+
+            <div class="wrap-element">
+                <div>
+                    <h3 class="font-semibold text-center md:text-right">sam_</h3>
+                    <p class="leading-relaxed text-center md:text-right">is an enthusiast for technology and focuses on its connection to society. As a political scientist, sociology graduate and painter she came to programming via the fascination how tech shapes reality. About the PrototypeFund in general and the FormsWizard explicitly she likes especially the power of empowerment.</p>
+                </div>
+                <div class="m-0 md:ml-20">
+                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Drawing of sam" width="300rem" />
+                </div>
+            </div>
+           
         </div>
     );
 }

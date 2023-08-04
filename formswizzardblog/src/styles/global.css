@@ -299,7 +299,7 @@ ul {
   flex-direction: column;
   place-content: center;
   align-items: center;
-  width: 90%;
+  width: 98%;
 }
 
 .page-main > div {
@@ -352,14 +352,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-  /* place-content: space-between center; */
-  /* place-content: flex-start, space-between; */
-  /* flex-direction: column;
-  max-width: 100%; */
-  /* min-height: 100vh; */
-  /* width: 60% */
-/* } */
-
 
 .blogIntro {
   width: 70%;
@@ -373,8 +365,6 @@ ul {
 
 .pagetitleBlog {
   display: flex;
-  /* font-size: 44px; */
-  font-weight: bold;
   -webkit-text-stroke: 0.4px rgb(125, 67, 98);
   font-weight: 400;
   /* color: #3945c6b6; */
@@ -383,11 +373,20 @@ ul {
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
+  /* margin-left: 5rem; */
+  font-size: 2rem;
 }
+
+/* @media (max-width: 768px) {
+  .pagetitleBlog {
+   justify-content: center; 
+   margin-left: 0;
+  }
+} */
 
 .pagetitleStart {
   font-size: calc(40px + 0.390625vw);  
-  font-weight: bold;
+  font-weight: 1000;
   -webkit-text-stroke: 0.4px rgb(90, 39, 66);
   /* font-weight: 400; */
   color: white;
@@ -399,16 +398,26 @@ ul {
 
 .pagetitleAbout {
   display: flex;
-  font-weight: bold;
   -webkit-text-stroke: 0.4px rgb(12, 1, 7);
-  font-weight: 400;
+  font-weight: 500;
   /* color: #3945c6b6; */
   color: white;
   /* color: rgba(30, 23, 73, 0.621); */
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
+  /* margin-left: 5rem; */
+  font-size: 2rem;
 }
+
+/* @media (max-width: 768px) {
+  .pagetitleAbout {
+   justify-content: center; 
+   margin-left: 0;
+  }
+} */
+
+
 
 /* a,
   button {
@@ -564,6 +573,7 @@ button:focus-visible {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  display: flex;
 }
 
 .header li a {
@@ -571,6 +581,9 @@ button:focus-visible {
   padding: 4px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .invisibleBtn {
@@ -702,6 +715,15 @@ button:focus-visible {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media (min-width: 691px) {
+.dropdown-toggle ul{
+  display:flex;
+  flex-direction: column;
+  text-align: right;
+  line-height: 0.5;
+}
 }
 
 /* end nav version 1b */
@@ -1060,16 +1082,17 @@ svg {
   } */
 
 .farbcontainerBlue1 {
-  background-color: #1c175c;
-  height: 1%;
+  background-color: #f9d6399a;
+  height: 5px;
   padding-top: 1%;
   width: 100%;
 }
 
 .farbcontainerBlue2 {
-  background-color: #3542ad;
-  height: 2%;
+  background-color: #624bc7c8;
+  height: 1%;
   padding-top: 2%;
+  padding-bottom: 2%;
   width: 100%;
 }
 
