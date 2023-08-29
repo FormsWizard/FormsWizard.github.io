@@ -193,17 +193,17 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-  background-color: #0e0248;
+  background-color: #ffffff;
   /* background-color: hsl(var(--bkg)); */
-  color: #ffffff;
-  color: hsl(var(--txt));
+  color: #110303;
+  /* color: hsl(var(--txt)); */
   font-size: max(1.13rem, min(calc(1.04rem + 0.43vw), 1.38rem));
   font-size: var(--fs-md);
   line-height: 1.4;
   line-height: var(--lh-1-4);
   font-family: "Work Sans", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -moz-osx-font-smoothing: grayscale; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -219,15 +219,6 @@ body {
   }
   */
 
-.h1 {
-    font-size: max(2.8rem, min(calc(2.31rem + 2.43vw), 4.2rem));
-    font-size: var(--fs-2xl);
-    max-width: 20ch;
-    max-width: var(--content-xs);
-  } 
-
-
-
 
 /* fontsizes: -----------------------------------------------*/
 
@@ -238,6 +229,14 @@ html {
 p a {
   font-size: calc(15px + 0.390625vw);
 }
+
+
+.h1 {
+  font-size: max(2.8rem, min(calc(2.31rem + 2.43vw), 4.2rem));
+  font-size: var(--fs-2xl);
+  max-width: 20ch;
+  max-width: var(--content-xs);
+} 
 
 .h1,
 .content h1 {
@@ -770,17 +769,21 @@ svg {
 
 
   :where(footer) {
-    width: 100vh;
+    /* width: 100vh; */
+    width: 100vw;
+    position: relative; 
+    max-width: 100vw;
     text-align: center;
     padding: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
     padding: var(--space-sm);
-    background-color: #fcfcfd;
-    background-color: hsl(var(--muted));
-    box-shadow: 0.2px 0.5px 0.6px #8186bb40, 1.1px 2.7px 3.3px -0.4px #8186bb40,
+    background-color: #b5b5dc;
+    /* background-color: #fcfcfd; */
+    /* background-color: hsl(var(--muted)); */
+    /* box-shadow: 0.2px 0.5px 0.6px #8186bb40, 1.1px 2.7px 3.3px -0.4px #8186bb40,
       2.1px 5px 6.1px -0.7px #8186bb40, 3.5px 8.3px 10.1px -1.1px #8186bb40,
       5.6px 13.2px 16.1px -1.4px #8186bb40, 8.7px 20.7px 25.3px -1.8px #8186bb40,
       13.3px 31.4px 38.4px -2.1px #8186bb40, 19.6px 46.3px 56.6px -2.5px #8186bb40;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg); */
   }
   
   :where(footer) div {
@@ -788,7 +791,7 @@ svg {
     align-items: center;
     justify-items: center;
     place-items: center;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin-left: auto;
     margin-right: auto;
     gap: max(0.88rem, min(calc(0.7rem + 0.87vw), 1.38rem));
@@ -817,6 +820,10 @@ svg {
   .icon-front {
     width: 230px;
     padding: 3%
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1105,4 +1112,26 @@ svg {
 
 .headerBox {
   max-width: fit-content;
+}
+
+.coloredDiv{
+  width: 100vw;
+  position: relative; 
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* left: 50%;
+  margin-left: -50vw; */
+}
+
+.textArea{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 75%;
+  position: relative; 
+  max-width: 100vw;
+  padding: 30px;
+  color: #ffff;
 }

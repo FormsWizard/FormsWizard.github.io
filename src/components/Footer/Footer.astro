@@ -1,0 +1,64 @@
+---
+import Link from "@mui/material/Link";
+
+const platform = "Github";
+const projectname = "formswizard";
+---
+
+<footer>
+  <div class="footer">
+    <!-- class="flex flex-col justify-center text-center" -->
+    <div></div>
+    <div>
+      <p class="text-lg">
+        {"FormsWizard"}
+        {" "}
+        {new Date().getFullYear()}
+        {""}
+      </p>
+    </div>
+
+    <div>
+      <h1>For contribution &</h1> more details check on the
+      <a
+        href={`https://www.${platform}.com/${projectname}`}
+        class="justify-center font-normal hover:font-semibold"
+        >{platform} project page!</a
+      >
+    </div>
+  </div>
+
+  <div>
+    <div class="">
+      <p>The startpoint is made possible by the funding through:</p>
+    </div>
+
+    <div class="flex justify-center font-normal hover:font-semibold">
+      <Link color="inherit" href="https://prototypefund.de/">
+        <img
+          src="/src/images/PrototypeLogo/PrototypeFundLogo.png"
+          width="54rem"
+          height="54rem"
+          alt="Logo"
+        /> Prototype Fund
+      </Link>
+      {" "}
+    </div>
+
+    <div class="flex justify-center">
+      <p>
+        <Link
+          color="inherit"
+          href="https://www.bmbf.de/bmbf/de/home/home_node.html"
+        >
+          <img
+            src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png"
+            width="150rem"
+            height="150rem"
+            alt="Logo_Bundesministerium"
+          />
+        </Link>
+      </p>{" "}
+    </div>
+  </div>
+</footer>
