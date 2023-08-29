@@ -10,7 +10,7 @@ const projectname = "formswizard";
     <!-- class="flex flex-col justify-center text-center" -->
     <div></div>
     <div>
-      <p class="text-lg">
+      <p class="text-lg font-semibold tracking-wide capitalize">
         {"FormsWizard"}
         {" "}
         {new Date().getFullYear()}
@@ -19,46 +19,53 @@ const projectname = "formswizard";
     </div>
 
     <div>
-      <h1>For contribution &</h1> more details check on the
-      <a
-        href={`https://www.${platform}.com/${projectname}`}
-        class="justify-center font-normal hover:font-semibold"
-        >{platform} project page!</a
-      >
-    </div>
-  </div>
-
-  <div>
-    <div class="">
-      <p>The startpoint is made possible by the funding through:</p>
-    </div>
-
-    <div class="flex justify-center font-normal hover:font-semibold">
-      <Link color="inherit" href="https://prototypefund.de/">
-        <img
-          src="/src/images/PrototypeLogo/PrototypeFundLogo.png"
-          width="54rem"
-          height="54rem"
-          alt="Logo"
-        /> Prototype Fund
-      </Link>
-      {" "}
-    </div>
-
-    <div class="flex justify-center">
-      <p>
-        <Link
-          color="inherit"
-          href="https://www.bmbf.de/bmbf/de/home/home_node.html"
+      <h1>
+        For contribution & more details check on the
+        <a
+          href={`https://www.${platform}.com/${projectname}`}
+          class="justify-center font-normal hover:font-semibold"
+          >{platform} project page!</a
         >
-          <img
-            src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png"
-            width="150rem"
-            height="150rem"
-            alt="Logo_Bundesministerium"
-          />
-        </Link>
-      </p>{" "}
+      </h1>
+    </div>
+    <div class="wrapper-footer">
+      <div class="">
+        <p class="font-light text-base">
+          The development initiative was funded and supported by:
+        </p>
+      </div>
+
+      <div class="fundlogo-wrapper">
+        <div
+          class="flex justify-center hover:font-semibold font-light"
+        >
+          <Link color="inherit" href="https://prototypefund.de/">
+            <img
+              src="/src/images/PrototypeLogo/PrototypeFundLogo.png"
+              width="54rem"
+              height="54rem"
+              alt="Logo"
+            /> Prototype Fund
+          </Link>
+          {" "}
+        </div>
+
+        <div class="flex justify-center">
+          <p>
+            <Link
+              color="inherit"
+              href="https://www.bmbf.de/bmbf/de/home/home_node.html"
+            >
+              <img
+                src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png"
+                width="150rem"
+                height="150rem"
+                alt="Logo_Bundesministerium"
+              />
+            </Link>
+          </p>{" "}
+        </div>
+      </div>
     </div>
   </div>
 </footer>
