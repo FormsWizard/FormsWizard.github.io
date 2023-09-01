@@ -101,12 +101,12 @@ import Link from '@mui/material/Link';
 // }
 
 
-export default function StickyFooterTS() {
-  return (
-    <Box>
-        <Container >
-          <div></div>
-        </Container>
-    </Box>
-  );
-}
+// export default function StickyFooterTS() {
+//   return (
+//     <Box>
+//         <Container >
+//           <div></div>
+//         </Container>
+//     </Box>
+//   );
+// }
