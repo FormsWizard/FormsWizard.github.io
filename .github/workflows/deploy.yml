@@ -10,13 +10,13 @@ jobs:
     - uses: cachix/install-nix-action@v22
       #with:
       #  github_access_token: ${{ secrets.GITHUB_TOKEN }}
-    - run: nix build
+    - run: nix develop .#ci --command echo shellHook
     - run: nix flake check
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: result
+        path: dist
 
   deploy:
     permissions:
