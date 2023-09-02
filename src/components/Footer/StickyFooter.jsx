@@ -15,7 +15,7 @@ import Link from '@mui/material/Link';
 //       </div>
 //       <div class="flex items-center">
 //         <Link color="inherit" href="https://prototypefund.de/">
-//           <img src="/formswizzardblog/src/images/PrototypeLogo/PrototypeFundLogo.png" width="1rem" height="1rem" alt="Logo" ></img>
+//           <img src="/formswizardblog/src/images/PrototypeLogo/PrototypeFundLogo.png" width="1rem" height="1rem" alt="Logo" ></img>
 //           PrototypeFund
 //         </Link>{' '}
 //       </div>

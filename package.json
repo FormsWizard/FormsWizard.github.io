@@ -1,5 +1,5 @@
 {
-  "name": "formswizzardblog",
+  "name": "@formswizard/website",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
