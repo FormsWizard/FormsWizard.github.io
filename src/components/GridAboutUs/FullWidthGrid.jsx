@@ -64,7 +64,6 @@ export default function FullWidthGrid() {
                     <img src="/src/images/Avatare/sam_profil2.png" alt="Drawing of sam" width="650rem" />
                 </div>
             </div>
-           
         </div>
     );
 }
