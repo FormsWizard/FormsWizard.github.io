@@ -58,10 +58,10 @@ export default function FullWidthGrid() {
             <div class="wrap-element">
                 <div>
                     <h3 class="font-semibold text-center md:text-right">sam_</h3>
-                    <p class="leading-relaxed text-center md:text-right">is an enthusiast for technology and focuses on its connection to society. As a political scientist, sociology graduate and painter she came to programming via the fascination how tech shapes reality. About the PrototypeFund in general and the FormsWizard explicitly she likes especially the power of empowerment.</p>
+                    <p class="leading-relaxed text-center md:text-right">is an enthusiast for technology and focuses on its connection to society. As a political scientist, sociology graduate and painter she came to programming via the fascination how tech shapes reality.</p>
                 </div>
                 <div class="m-0 md:ml-20">
-                    <img src="https://i.postimg.cc/x8bxFS7F/Avatar4.png" alt="Drawing of sam" width="300rem" />
+                    <img src="/src/images/Avatare/sam_profil2.png" alt="Drawing of sam" width="650rem" />
                 </div>
             </div>
            
