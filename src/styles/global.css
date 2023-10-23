@@ -565,6 +565,13 @@ button:focus-visible {
   width: 100%;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 /* nav version 2 */
 .header ul {
   margin: 0;

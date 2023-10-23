@@ -20,15 +20,17 @@ import github from "../images/iconsFront/github-mark.png"
 
 
 <header class="header nav">
-  <a href="" class="logo"><Image src={i} alt="logo"></Image> </a>
+  <a href="/" class="logo"><Image src={i} alt="logo"></Image> </a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
+    <li><a href="/" aria-disabled="true">Home </a></li>
     <li>
+
       <Dropdown class="group">
           <button class="invisibleBtn">
             <span> Wizard Components</span>
-            <!-- You can style when dropdown is `open` -->
+
             <svg
               class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,8 +54,9 @@ import github from "../images/iconsFront/github-mark.png"
               </ul>
             </DropdownItems>
       </Dropdown>
-    </li>
-    <li><a href="#examples">Examples (inactive)</a></li>
+    </li> 
+
+    <li><a  class="isDisabled" >Examples </a></li>
     <!-- <li>
       <a
         href="https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"
