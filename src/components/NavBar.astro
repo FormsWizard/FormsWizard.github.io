@@ -11,10 +11,16 @@ import {
   OpenIcon,
   CloseIcon,
 } from "astro-navbar";
+
+import i from "../images/fw/Forms-Wizard_Logo_V5_nomargin.png"
+import { Image } from "astro:assets";
+import github from "../images/iconsFront/github-mark.png"
 ---
 
-<header class="header">
-  <a href="/" class="logo"> Logo</a>
+
+
+<header class="header nav">
+  <a href="" class="logo"><Image src={i} alt="logo"></Image> </a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
@@ -37,6 +43,7 @@ import {
                 stroke-linejoin="round"
                 d="M19 9l-7 7-7-7"></path>
             </svg>
+          </button>
             <DropdownItems class="flex justify-end">
               <ul>
                 <li><a href="#Generator">Generator</a></li>
@@ -44,43 +51,25 @@ import {
                 <li><a href="#Analyser">Analyser</a></li>
               </ul>
             </DropdownItems>
-          </button>
       </Dropdown>
     </li>
     <li><a href="#examples">Examples (inactive)</a></li>
-    <li>
+    <!-- <li>
       <a
         href="https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"
         >Docs</a>
+    </li> -->
+    <li >
+      <li><a href={"/about"} aria-label="About">About Us</a></li>
     </li>
-    <li>
-      <Dropdown class="group">
-        <button class="invisibleBtn">
-          <span> Resources</span>
-          <!-- You can style when dropdown is `open` -->
-          <svg
-            class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19 9l-7 7-7-7"></path>
-          </svg>
-          <DropdownItems>
-            <ul>
-              <li><a href={"/blog"} aria-label="Blog">Blog</a></li>
-              <li><a href={"/about"} aria-label="About">About Us</a></li>
-              <li><a href={"/FAQ"} aria-label="FAQ">FAQ (inactive)</a></li>
-            </ul>
-          </DropdownItems>
-        </button>
-      </Dropdown>
-    </li>
+
+  
+
   </ul>
+  <!-- <div class="self-center">
+
+    <a href={"/about"} aria-label="About"><Image src={github} alt="github" height={30}> </Image>
+    </div> -->
 </header>
+
+
