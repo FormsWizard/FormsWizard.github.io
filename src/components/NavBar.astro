@@ -17,22 +17,19 @@ import { Image } from "astro:assets";
 import github from "../images/iconsFront/github-mark.png"
 ---
 
-
-
+<div class="design-element-navbar"></div>
 <header class="header nav">
-  <a href="/" class="logo"><Image src={i} alt="logo"></Image> </a>
+  <a href="/" class="logo"><Image src={i} alt="logo"></Image></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="/" aria-disabled="true">Home </a></li>
+    <li><a href="/" aria-current="page">Home</a></li>
     <li>
-
       <Dropdown class="group">
           <button class="invisibleBtn">
-            <span> Wizard Components</span>
-
+            <span>Wizard Components</span>
             <svg
-              class="h-6 w-6 rotate-0 transform text-gray-500 group-open:rotate-180"
+              class="h-5 w-5 rotate-0 transform text-gray-500 group-open:rotate-180"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -46,36 +43,40 @@ import github from "../images/iconsFront/github-mark.png"
                 d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
-            <DropdownItems class="flex justify-end">
-              <ul>
-                <!-- <li><a href="#Generator">Generator</a></li>
-                <li><a href="#Editor">Editor</a></li>
-                <li><a href="#Analyser">Analyser</a></li> -->
-                <li><a class="isDisabled"> Generator</a></li>
-                <li><a class="isDisabled">Editor</a></li>
-                <li><a class="isDisabled">Analyser</a></li> 
-              </ul>
-            </DropdownItems>
+          <DropdownItems class="dropdown-content">
+            <ul>
+              <li><a class="isDisabled">Generator</a></li>
+              <li><a class="isDisabled">Editor</a></li>
+              <li><a class="isDisabled">Analyser</a></li> 
+            </ul>
+          </DropdownItems>
       </Dropdown>
     </li> 
-
-    <li><a  class="isDisabled" >Examples </a></li>
-    <!-- <li>
-      <a
-        href="https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md"
-        >Docs</a>
-    </li> -->
-    <li >
-      <li><a href={"/about"} aria-label="About">About Us</a></li>
-    </li>
-
-  
-
+    <li><a class="isDisabled">Examples</a></li>
+    <li><a href="/about" aria-label="About">About Us</a></li>
+    <li><a href="https://github.com/FormsWizard/formswizard" target="_blank" class="github-link">
+      <Image src={github} alt="GitHub" width={22} height={22} />
+      <span>GitHub</span>
+    </a></li>
   </ul>
-  <!-- <div class="self-center">
-
-    <a href={"/about"} aria-label="About"><Image src={github} alt="github" height={30}> </Image>
-    </div> -->
 </header>
+
+<style>
+  .github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .github-link img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  [aria-current="page"] {
+    color: var(--primary);
+    font-weight: 600;
+  }
+</style>
 
 

@@ -6,63 +6,191 @@ const projectname = "formswizard";
 ---
 
 <footer>
-  <div class="footer">
-    <!-- class="flex flex-col justify-center text-center" -->
- 
-    <div>
-      <p class="text-lg font-semibold tracking-wide capitalize">
-        FormsWizard {new Date().getFullYear()}
-      </p>
-    </div>
-
-    <div>
-      <h1>
-        For contribution & more details check on the
-        <a
-          href={`https://www.${platform}.com/${projectname}`}
-          class="justify-center font-normal hover:font-semibold"
-          >{platform} project page!</a
-        >
-      </h1>
-    </div>
-    <div class="wrapper-footer">
-      <div class="">
-        <p class="font-light text-base">
-          The development initiative was funded and supported by:
-        </p>
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <h2 class="footer-title">FormsWizard</h2>
+        <p class="footer-tagline">Open-source form building made simple</p>
+        <p class="copyright">© {new Date().getFullYear()} FormsWizard</p>
       </div>
+      
+      <div class="footer-links">
+        <div class="footer-links-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://github.com/FormsWizard/formswizard/blob/main/doc/src/SUMMARY.md">Documentation</a></li>
+            <li><a href="https://github.com/FormsWizard/formswizard/issues">Report an issue</a></li>
+            <li><a href="/about">About us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-column">
+          <h3>Community</h3>
+          <ul>
+            <li>
+              <a href={`https://www.${platform}.com/${projectname}`} class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-sponsors">
+      <p class="sponsors-text">The development initiative was funded and supported by:</p>
+      <div class="sponsors-logos">
+        <Link color="inherit" href="https://prototypefund.de/" class="sponsor-link">
+          <img
+            src="/src/images/PrototypeLogo/PrototypeFundLogo.png"
+            width="54"
+            height="54"
+            alt="Prototype Fund Logo"
+          />
+          <span>Prototype Fund</span>
+        </Link>
 
-      <div class="fundlogo-wrapper">
-        <div
-          class="flex justify-center hover:font-semibold font-light"
+        <Link
+          color="inherit"
+          href="https://www.bmbf.de/bmbf/de/home/home_node.html"
+          class="sponsor-link"
         >
-          <Link color="inherit" href="https://prototypefund.de/">
-            <img
-              src="/src/images/PrototypeLogo/PrototypeFundLogo.png"
-              width="54rem"
-              height="54rem"
-              alt="Logo"
-            /> Prototype Fund
-          </Link>
-
-        </div>
-
-        <div class="flex justify-center">
-          <p>
-            <Link
-              color="inherit"
-              href="https://www.bmbf.de/bmbf/de/home/home_node.html"
-            >
-              <img
-                src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png"
-                width="150rem"
-                height="150rem"
-                alt="Logo_Bundesministerium"
-              />
-            </Link>
-          </p>
-        </div>
+          <img
+            src="/src/images/BundesministeriumLogo/BundesministeriumLogo.png"
+            width="150"
+            height="150"
+            alt="Bundesministerium Logo"
+          />
+        </Link>
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  footer {
+    background-color: #f8f9ff;
+    border-top: 1px solid var(--gray-200);
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-brand {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-tagline {
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+  }
+  
+  .copyright {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .footer-links-column h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+  }
+  
+  .footer-links-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links-column li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-links-column a {
+    color: var(--gray-600);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links-column a:hover {
+    color: var(--primary);
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-sponsors {
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-200);
+  }
+  
+  .sponsors-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--gray-600);
+  }
+  
+  .sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .sponsor-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--gray-700);
+    transition: transform 0.2s ease;
+  }
+  
+  .sponsor-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .footer-links {
+      gap: 2rem;
+    }
+  }
+</style>

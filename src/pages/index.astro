@@ -4,126 +4,338 @@ import FastForwardIcon from "@mui/icons-material/FastForward";
 import Icon from "@mui/material/Icon";
 ---
 
-<MainLayout title="Home">
+<MainLayout title="FormsWizard - Open Source Form Builder">
   <div class="wrapper">
     <div class="header">
-      <!-- <div class="w-screen"> //tried: rausgenommen statt div ohne klasse vorher -->
-      <div class="farbcontainerBlue1">
-        <p></p>
-      </div>
+      <div class="farbcontainerBlue1"></div>
       <div class="farbcontainerBlue2">
-        <h1 class="pagetitleStart leading-relaxed text-center">
-          FormsWizard
-        </h1>
+        <h1 class="pagetitleStart">FormsWizard</h1>
       </div>
     </div>
+    
+    <div class="hero-section">
+      <div class="hero-content">
+        <h2>Build, Share, and Analyze Forms with End-to-End Encryption</h2>
+        <p>
+          A lightweight open source framework that combines No-Code simplicity with 
+          the power of JSON-Schema and secure data exchange.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://github.com/FormsWizard/formswizard" class="btn btn-primary">Get Started</a>
+          <a href="/about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    
     <div class="page-main">
-      <div class="page-intro md:w-5/6 sm:w-full">
-        <h4 class="leading-relaxed mt-3 text-center">
+      <div class="page-intro">
+        <h4>
           Forms Wizard provides you with secure data management and powerful
           analysis options - so you can focus your energy on collaboration and
           the future!
         </h4>
       </div>
 
-      <div class="wrap-element-a">
-        <div>
-          <img
-            src="/src/images/iconsFront/noun-empowering-2202388(1).png"
-            class="icon-front"
-          />
+      <div class="features-grid">
+        <div class="wrap-element-a feature-card">
+          <div>
+            <img
+              src="/src/images/iconsFront/noun-empowering-2202388(1).png"
+              class="icon-front"
+            />
+          </div>
+          <div>
+            <h3>Flexible Data Management</h3>
+            <p>
+              The Forms Wizard supports teams in various use cases to
+              collect and evaluate the data they need. Run it self-hosted
+              or on our infrastructure.
+            </p>
+          </div>
         </div>
-        <div>
-          <h1
-            class="leading-relaxed font-bold text-[#5660ce] text-center md:text-left sm:pt-50 md:pl-7 text-lg"
-          >
-            Flexibile Datamanagement
-          </h1>
-          <p class="leading-relaxed text-[#5660ce] text-center md:text-left">
-            The Forms_Wizard aims to support crews in various use cases to
-            collect and evaluate the data they need. This can happen self hosted
-            or on our infrastructures.
-          </p>
+        
+        <div class="wrap-element feature-card">
+          <div>
+            <h3>Data Evaluation Made Easy</h3>
+            <p>
+              With the DataWizard you can visualize shift plans, show locations on maps,
+              evaluate connections on network graphs & more. The interdependence between 
+              dataset and visualization lets you effectively use different viewports.
+            </p>
+          </div>
+          <div>
+            <img
+              src="/src/images/iconsFront/noun-analysis-3694231(1).png"
+              class="icon-front"
+            />
+          </div>
         </div>
-      </div>
-      <div class="wrap-element">
-        <div>
-          <h1
-            class="leading-relaxed font-bold text-[#5660ce] text-center md:text-right md:pr-10 text-lg"
-          >
-            Data evaluation made easy
-          </h1>
-          <p class="leading-relaxed text-[#5660ce] text-center md:text-right">
-            A core part of the WizardPac is the evaluation tool - with the
-            DataWizard you can visualize shift plans, show locations on a map,
-            evaluate connections on network graphs & more. <br />Also we
-            integrated an interdependence between dataset and visualization so
-            that you can effictively make use of the different view ports.
-          </p>
+        
+        <div class="wrap-element-a feature-card">
+          <div>
+            <img
+              src="/src/images/iconsFront/noun-cyber-security-3685949(1).png"
+              class="icon-front"
+            />
+          </div>
+          <div>
+            <h3>Security by Design & Open Source</h3>
+            <p>
+              Security by Design is the leading concept in the WizardPac build. 
+              Combined with Open Source distribution, you don't need to trust
+              your data to a black box.
+            </p>
+          </div>
         </div>
-        <div>
-          <img
-            src="/src/images/iconsFront/noun-analysis-3694231(1).png"
-            class="icon-front"
-          />
-        </div>
-      </div>
-      <div class="wrap-element-a">
-        <div>
-          <img
-            src="/src/images/iconsFront/noun-cyber-security-3685949(1).png"
-            class="icon-front"
-          />
-        </div>
-        <div>
-          <h1
-            class="leading-relaxed font-bold text-[#5660ce] text-center md:text-left md:pl-7 text-lg"
-          >
-            Security by Design & Open Source Distribution
-          </h1>
-          <p class="leading-relaxed text-[#5660ce] text-center md:text-left">
-            Security by Design is the leading concept in the WizardPac build. In
-            combination with the Open Source distribution you dont need to trust
-            your data into a black box.
-          </p>
-        </div>
-      </div>
-      <div class="wrap-element">
-        <div>
-          <h1
-            class="leading-relaxed font-bold text-[#5660ce] text-center md:text-right md:pr-10 text-lg"
-          >
-            Civic Engagement for Future
-          </h1>
-          <p class="leading-relaxed text-[#5660ce] text-center md:text-right">
-            We believe in civic engagement - in times of increasing crises, not
-            only in face of the climate catastrophe, we see the necessity of
-            individuals organizing in communities. In that menner the whole
-            WizardPac is transparently and collaboratively build as Open-Source.
-          </p>
-        </div>
-        <div>
-          <img
-            src="/src/images/iconsFront/noun-breathe-clean-air-3046872(1).png"
-            class="icon-front"
-          />
+        
+        <div class="wrap-element feature-card">
+          <div>
+            <h3>Civic Engagement for the Future</h3>
+            <p>
+              We believe in civic engagement. In times of increasing crises,
+              we see the necessity of individuals organizing in communities.
+              The entire WizardPac is transparently and collaboratively built as Open Source.
+            </p>
+          </div>
+          <div>
+            <img
+              src="/src/images/iconsFront/noun-breathe-clean-air-3046872(1).png"
+              class="icon-front"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <div class="coloredDiv bg-indigo-500">
+    
+    <div class="coloredDiv">
       <div class="textArea">
         <div>
-          <p class="text-center leading-relaxed">
-            With Forms Wizard you dont need to trust your data into a blackbox.<br />
-            <a class="text-sm" href="/blog"><u>Learn more</u></a> and follow or contribute
+          <p class="text-center">
+            With Forms Wizard you don't need to trust your data to a black box.<br />
+            <a href="/blog">Learn more</a> and follow or contribute
             to the development process of this Open Source tool.
           </p>
         </div>
       </div>
     </div>
+    
+    <div class="components-section">
+      <h2>Core Components</h2>
+      <div class="components-grid">
+        <div class="component-card">
+          <div class="component-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+            </svg>
+          </div>
+          <h3>Forms Designer</h3>
+          <p>Create forms with our intuitive drag-and-drop editor. Available as React CRA, React Vite, and Next.js builds.</p>
+        </div>
+        
+        <div class="component-card">
+          <div class="component-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+            </svg>
+          </div>
+          <h3>Survey App</h3>
+          <p>The generated form visible to users who fill out forms or gather data, with a clean and responsive interface.</p>
+        </div>
+        
+        <div class="component-card">
+          <div class="component-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+            </svg>
+          </div>
+          <h3>Processing App</h3>
+          <p>Automatically generated tables based on Material React Tables (Tanstack/react-tables) for powerful data analysis.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="p-20">
-    <p>Coming: Introduction to the different Software Components!</p>
-  </div>
-  <div></div>
 </MainLayout>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, rgba(86, 96, 206, 0.05) 0%, rgba(86, 96, 206, 0.1) 100%);
+    padding: 4rem 1rem;
+    margin: 2rem 0 4rem;
+    border-radius: 12px;
+    max-width: 1200px;
+    width: 90%;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 6px rgba(86, 96, 206, 0.2);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(86, 96, 206, 0.25);
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(86, 96, 206, 0.05);
+    transform: translateY(-2px);
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .feature-card h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    color: var(--gray-700);
+    line-height: 1.6;
+  }
+  
+  .components-section {
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .components-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .components-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 2px;
+  }
+  
+  .components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .component-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+  
+  .component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .component-icon {
+    background-color: rgba(86, 96, 206, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+  
+  .component-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+  
+  .component-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .btn {
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+    }
+  }
+</style>
