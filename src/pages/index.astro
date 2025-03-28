@@ -15,14 +15,16 @@ import Icon from "@mui/material/Icon";
     
     <div class="hero-section">
       <div class="hero-content">
+        <div class="live-demo-badge">Live Demo Available!</div>
         <h2>Build, Share, and Analyze Forms with End-to-End Encryption</h2>
         <p>
           A lightweight open source framework that combines No-Code simplicity with 
           the power of JSON-Schema and secure data exchange.
         </p>
         <div class="hero-buttons">
-          <a href="https://github.com/FormsWizard/formswizard" class="btn btn-primary">Get Started</a>
-          <a href="/about" class="btn btn-secondary">Learn More</a>
+          <a href="https://formswizard.winzlieb.eu/" class="btn btn-primary">Create Your Secure Form Now!</a>
+          <a href="https://github.com/FormsWizard/formswizard" class="btn btn-secondary">Get Started</a>
+          <a href="/about" class="btn btn-outline">Learn More</a>
         </div>
       </div>
     </div>
@@ -60,7 +62,7 @@ import Icon from "@mui/material/Icon";
             <p>
               With the DataWizard you can visualize shift plans, show locations on maps,
               evaluate connections on network graphs & more. The interdependence between 
-              dataset and visualization lets you effectively use different viewports.
+              acquired form data and visualization lets you effectively use different viewports.
             </p>
           </div>
           <div>
@@ -148,8 +150,8 @@ import Icon from "@mui/material/Icon";
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
             </svg>
           </div>
-          <h3>Processing App</h3>
-          <p>Automatically generated tables based on Material React Tables (Tanstack/react-tables) for powerful data analysis.</p>
+          <h3>Data Analysis App</h3>
+          <p>Automatically generated tables based on Material React Tables (Tanstack/react-tables) for powerful analysis of acquired form data.</p>
         </div>
       </div>
     </div>
@@ -170,6 +172,31 @@ import Icon from "@mui/material/Icon";
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+  }
+  
+  .live-demo-badge {
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(249, 215, 57, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(249, 215, 57, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(249, 215, 57, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(249, 215, 57, 0);
+    }
   }
   
   .hero-content h2 {
@@ -216,12 +243,24 @@ import Icon from "@mui/material/Icon";
   }
   
   .btn-secondary {
+    background-color: var(--gray-800);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--gray-900);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-outline {
     background-color: white;
     color: var(--primary);
     border: 2px solid var(--primary);
   }
   
-  .btn-secondary:hover {
+  .btn-outline:hover {
     background-color: rgba(86, 96, 206, 0.05);
     transform: translateY(-2px);
   }
@@ -336,6 +375,20 @@ import Icon from "@mui/material/Icon";
       width: 100%;
       max-width: 250px;
       text-align: center;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .btn-primary {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
     }
   }
 </style>
