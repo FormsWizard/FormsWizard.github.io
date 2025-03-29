@@ -210,7 +210,7 @@ import Icon from "@mui/material/Icon";
           </div>
           <div class="tech-content">
             <h3>Redux</h3>
-            <p>A predictable state container for JavaScript apps, helping manage application state and data flow efficiently.</p>
+            <p>A predictable state container for JavaScript apps, helping manage application state and data flow efficiently, that plays well with Yjs as a middleware.</p>
             <a href="https://redux.js.org/" target="_blank" class="tech-link">Learn more</a>
           </div>
         </div>
@@ -218,7 +218,7 @@ import Icon from "@mui/material/Icon";
         <div class="tech-card reverse">
           <div class="tech-content">
             <h3>Yjs</h3>
-            <p>A CRDT implementation that enables real-time collaboration features in our form editor, allowing multiple users to work simultaneously.</p>
+            <p>A CRDT implementation that enables real-time collaboration features.  In Forms Wizard it allows instant sharing of forms and depending on the use case a client only architexture, where clients communicate via WebRTC without the need of a server.</p>
             <a href="https://yjs.dev/" target="_blank" class="tech-link">Learn more</a>
           </div>
           <div class="tech-logo">
@@ -506,93 +506,6 @@ import Icon from "@mui/material/Icon";
     border-radius: 2px;
   }
   
-  .tech-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
-  }
-  
-  .tech-card {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    padding: 2rem;
-    gap: 2rem;
-  }
-  
-  .tech-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tech-card.reverse {
-    flex-direction: row-reverse;
-  }
-  
-  .tech-logo {
-    flex: 0 0 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tech-logo img {
-    max-width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-  }
-  
-  .tech-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .tech-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-  }
-  
-  .tech-content p {
-    color: var(--gray-700);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  .tech-link {
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.2s ease;
-  }
-  
-  .tech-link:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .tech-card, .tech-card.reverse {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    
-    .tech-content {
-      text-align: center;
-    }
-    
-    .tech-logo {
-      flex: 0 0 auto;
-    }
-  }
   
   @media (max-width: 768px) {
     .hero-buttons {
