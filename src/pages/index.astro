@@ -156,6 +156,88 @@ import Icon from "@mui/material/Icon";
         </div>
       </div>
     </div>
+    
+    <div class="technologies-section">
+      <h2>Core Technologies</h2>
+      <div class="tech-cards">
+        <div class="tech-card">
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/React-icon-logo.svg" alt="React Logo" />
+          </div>
+          <div class="tech-content">
+            <h3>React</h3>
+            <p>A JavaScript library for building user interfaces, providing the foundation for our interactive components and responsive design.</p>
+            <a href="https://reactjs.org/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="tech-card reverse">
+          <div class="tech-content">
+            <h3>JSON Schema</h3>
+            <p>The backbone of our form definitions, allowing for standardized validation, documentation, and interoperability of form structures.</p>
+            <a href="https://json-schema.org/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/json-schema-logo.png" alt="JSON Schema Logo" />
+          </div>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/json-forms-logo.svg" alt="JSON Forms Logo" />
+          </div>
+          <div class="tech-content">
+            <h3>JSON Forms</h3>
+            <p>A framework that renders forms based on JSON Schema, enabling dynamic form generation with minimal coding required.</p>
+            <a href="https://jsonforms.io/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="tech-card reverse">
+          <div class="tech-content">
+            <h3>Material UI</h3>
+            <p>A comprehensive React UI framework that provides pre-built, customizable components for a consistent and professional look.</p>
+            <a href="https://mui.com/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/material-ui-logo.svg" alt="Material UI Logo" />
+          </div>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/Redux-logo.png" alt="Redux Logo" />
+          </div>
+          <div class="tech-content">
+            <h3>Redux</h3>
+            <p>A predictable state container for JavaScript apps, helping manage application state and data flow efficiently.</p>
+            <a href="https://redux.js.org/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="tech-card reverse">
+          <div class="tech-content">
+            <h3>Yjs</h3>
+            <p>A CRDT implementation that enables real-time collaboration features in our form editor, allowing multiple users to work simultaneously.</p>
+            <a href="https://yjs.dev/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/yjs-logo.png" alt="Yjs Logo" />
+          </div>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-logo">
+            <img src="/src/images/tools-used/GnuPG-logo.svg" alt="GnuPG Logo" />
+          </div>
+          <div class="tech-content">
+            <h3>GnuPG</h3>
+            <p>Provides end-to-end encryption for secure data handling, ensuring that sensitive information remains protected throughout the process.</p>
+            <a href="https://gnupg.org/" target="_blank" class="tech-link">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </MainLayout>
 
@@ -393,6 +475,123 @@ import Icon from "@mui/material/Icon";
     width: auto;
     display: block;
     margin: 0 auto;
+  }
+  
+  /* Technologies Section Styles */
+  .technologies-section {
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .technologies-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .technologies-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 2px;
+  }
+  
+  .tech-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .tech-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-card.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .tech-logo {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-logo img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+  }
+  
+  .tech-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .tech-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .tech-content p {
+    color: var(--gray-700);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .tech-card, .tech-card.reverse {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .tech-content {
+      text-align: center;
+    }
+    
+    .tech-logo {
+      flex: 0 0 auto;
+    }
   }
   
   @media (max-width: 768px) {
