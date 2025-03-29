@@ -18,7 +18,7 @@ import github from "../images/iconsFront/github-mark.png"
 ---
 
 <div class="design-element-navbar"></div>
-<header class="header nav">
+<header class="header nav sticky">
   <a href="/" class="logo"><Image src={i} alt="logo"></Image></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -76,6 +76,14 @@ import github from "../images/iconsFront/github-mark.png"
   [aria-current="page"] {
     color: var(--primary);
     font-weight: 600;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 </style>
 
