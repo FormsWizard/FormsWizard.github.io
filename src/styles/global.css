@@ -1372,4 +1372,12 @@ svg {
   .tech-logo {
     flex: 0 0 auto;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--secondary);
+  }
 }
