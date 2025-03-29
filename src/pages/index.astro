@@ -15,9 +15,11 @@ import Icon from "@mui/material/Icon";
     
     <div class="hero-section">
       <div class="hero-content">
-        <a href="https://formswizard.winzlieb.eu/" class="live-demo-badge live-demo-link">
+        <div class="live-container">
+👉 <a href="https://formswizard.winzlieb.eu/new.html" class="live-demo-badge live-demo-link">
           Create Your Secure Form Now!
-        </a>
+        </a> 👈
+        </div>
         <h2>Build and Share Forms and Analyze Survey Data with End-to-End Encryption</h2>
         <p>
           A lightweight open source framework that combines No-Code simplicity with 
@@ -277,8 +279,23 @@ import Icon from "@mui/material/Icon";
   .live-demo-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 25px rgba(86, 96, 206, 0.4);
+    animation: pulse-margins 1.5s infinite;
   }
   
+  @keyframes pulse-margins {
+    0% {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    50% {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    100% {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
   .live-demo-badge {
     background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-dark) 100%);
     color: var(--text-dark);
